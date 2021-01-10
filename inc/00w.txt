@@ -1,0 +1,3 @@
+SELECT ID , CONCAT(WorkerName,' ',WorkerSurName) as  WorkerName,`WorkerNum`			
+			from workers  
+			where `status` = 1 and (WorkerName like '%שי%' or WorkerNum like '%שי%') order by `WorkerName`

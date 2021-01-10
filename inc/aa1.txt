@@ -1,0 +1,3 @@
+UPDATE `attendance` SET `exittime`='14:26',`recordclosednormally`=1,`istwodates`=1,
+		`enterclosedabnormally`=1,`exitclosedabnormally`=1,`valid`=1,`exittime_updated`='2017-08-02 14:26:54',
+		`total_salary`=0.00,`base_salary`=0.00,`lastupdated`=1501673214,`exit_day`='2017-08-02' WHERE id=2

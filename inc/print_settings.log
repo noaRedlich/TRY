@@ -1,0 +1,10 @@
+update vcx00.settings_user set 
+		print_tel     =1,
+print_fax     =0,
+print_mail    =0,
+print_web     =1,
+print_address =0,
+print_mikud   =0,        
+        print_logo   =1,  
+		name='KMH גלידריה',web=''	,comments='נשמח לראותכם שוב',barkod_len=9,desc_len=12,total_len=6				
+		where user_id='985'

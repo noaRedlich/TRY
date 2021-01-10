@@ -1,0 +1,82 @@
+	<div class="popup pop_peulot  pop_prepaid prepaidmain" style="z-index: 9999999" id="prepaid_main" ng-controller="PrepaidController">
+		<!--<img src="images/box_small.png" class="img_wrap"/>	-->	
+		<div class="container_pop an prepaidmain">
+		<h2 class="relative">כרטיס מתנה</h2>
+		
+		
+			<input class="mybtn btngreen " ng-click="load_prepaid_page();"  type="button" value="טעינת כרטיס "/>
+			</br>
+			</br>
+			<input class="mybtn btnblue "  ng-click="check_prepaid_page()" type="button" value="בדיקת כרטיס "/>
+			<!--onclick="check_prepaid();"-->
+			<input class="mybtn btnlightgray rightbottom" onclick="$( '.wrap' ).click();" type="button" value="ביטול">
+
+			
+		</div>
+	</div>	
+	
+	<div class="popup pop_peulot pop_prepaid  pop_prepaid_load" style="z-index: 9999999" ng-controller="PrepaidController">
+		<!--<img src="images/box_small.png" class="img_wrap"/>	-->	
+		<div class="container_pop an">
+		<h2 class="relative">כרטיס מתנה</h2>	
+		
+			<p class="" style="font-size: 200%;margin-top: 20px;margin-bottom: 10px;">הכנס סכום</p>			
+			<input type="tel" class="text prepaidload_sum" style="width: 92%;background: white;border: 1px solid #cfd2d9;height: 37px;">
+			<!-- sk 20/12/15 additional in prepaid-->
+	    	<p class="" style="font-size: 200%;margin-top: 20px;margin-bottom: 10px;">סה"כ תוספת לכרטיס</p>
+   			<input type="tel" class="text additional" style="width: 92%;background: white;border: 1px solid #cfd2d9;height: 37px;">
+        	<input type="hidden" class="sum_additional" value="0"/>
+			
+			<p class="" style="font-size: 200%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס מתנה</p>			
+			<input type="text" class=" prepaidload_num card_visibility" style="width: 92%;background: white;border: 1px solid #cfd2d9;height: 37px;">
+
+			</br></br></br>
+			<h3 class="card_load_msg" style="  font-size: 200%;"></h3>
+		
+			<!--<input class="mybtn leftbottom btnlightgray " type="button" value="אישור" ng-click="load_prepaid()">-->
+			<input class="mybtn btnlightgray rightbottom" onclick="$( '.wrap' ).click();" type="button" value="ביטול">
+
+			
+		</div>
+	</div>
+	
+	<div class="popup pop_peulot pop_prepaid  pop_prepaid_check" style="z-index: 9999999" ng-controller="PrepaidController">
+		<!--<img src="images/box_small.png" class="img_wrap"/>	-->	
+		<div class="container_pop an">
+		<h2 class="relative">כרטיס מתנה</h2>						
+		<p class="" style="font-size: 200%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס מתנה</p>			
+		<input type="text" class=" prepaidload_num card_visibility" style="width: 92%;background: white;border: 1px solid #cfd2d9;height: 37px;">
+		</br></br></br>
+		<h3 class="card_money" style="  font-size: 200%;"></h3>
+		<!--<input class="mybtn leftbottom btnlightgray " type="button" value="אישור" ng-click="check_prepaid()">-->
+		<input class="mybtn btnlightgray rightbottom" onclick="$( '.wrap' ).click();" type="button" value="ביטול">
+
+			
+		</div>
+	</div>
+	<!--<div class="popup pop_peulot  pop_prepaid_check" style="z-index: 9999999">
+		<div class="container_pop an">
+		<h2 class="relative">פריפייד</h2>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס פריפייד</p>		
+
+			<input class="mybtn btngreen " type="button" value="טעינת כרטיס "/>
+			<input class="mybtn btnblue " type="button" value="בדיקת כרטיס "/>
+			<input class="mybtn btnlightgray rightbottom" onclick="$( '.wrap' ).click();" type="button" value="ביטול">
+
+			
+		</div>
+	</div>	
+	<div class="popup pop_peulot  pop_prepaid2" style="z-index: 9999999">
+		<div class="container_pop an">
+		<h2 class="relative">פריפייד</h2>				
+			<input class="mybtn btngreen " type="button" value="טעינת כרטיס "/>
+			<input class="mybtn btnorange " type="button" value="בדיקת כרטיס "/>
+			<input class="mybtn btnblue " type="button" value="הנפק כרטיס חדש"/>
+			<input class="mybtn btnlightgray rightbottom" onclick="$( '.wrap' ).click();" type="button" value="ביטול">
+
+			
+		</div>
+	</div>-->
+	
+
+	

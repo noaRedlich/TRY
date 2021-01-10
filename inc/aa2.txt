@@ -1,0 +1,1 @@
+select * from vcx_whiteline.attendance where worker_num='101' and id=(select max(id) from attendance where worker_num='101')

@@ -1,0 +1,20 @@
+update vcx00.settings set
+			pr_lang='',pr_currency='',
+			pr_theme='',pr_online='0',
+			pr_slika='',pr_masof='',
+			pr_numcust='0',pr_currnumcust='0',pr_group='-1',
+			pr_viewprod='1',		
+			pr_viewpayment_mezuman='1',
+			pr_viewpayment_amchaa='0',
+			pr_viewpayment_credit='1',
+			pr_viewpayment_shovarzicuy='1',
+			pr_viewpayment_akafa='1',
+			pr_viewpayment_prepaid='0',
+			pr_viewpayment_shovar='0',
+			global_item ='0',
+			tip ='0',
+			pr_pass='',show_cash_button='0',
+			show_credit_button='0',show_cheque_button='0',show_shovar_button='0'
+			,show_shovarzicuy_button='0',show_prepaid_button='0'
+			,show_akafa_button='0'		
+			where user_id='985'

@@ -1,0 +1,39 @@
+<div class="popup pop_peulot  pop_pause" ng-controller="PauseController as pauseC">
+		<!--<img src="images/box_small.png" class="img_wrap"/>	-->	
+		<div class="container_pop an">
+		
+			<h2 style="margin-top: 30px;font-size: 150%;">מספר עסקה נוכחית:{{cash_kupanum|fill_num}} </h2>
+  			<input class="mybtn btnblue rightbottom" style="width: 140px;" type="button" value="עיסקאות בהמתנה" ng-click="start_pausecashes()">			
+			<input class="mybtn btnblue leftbottom" ng-click="end_cash(1)"  type="button" value="השהה עיסקה">
+			
+		</div>
+	</div>
+		<div class="popup pop_peulot  pop_hachlafa2" ng-controller="PauseController as pauseC">
+		<!--<img src="images/box_large.png" class="img_wrap"/>	-->			
+		<div class="container_pop an">
+			<table id="pause_trans" style="width: 100%;font-size:150%;line-height: 45px;">
+  					<tr class='details_title'>
+  					<th><span style="font-size:75%">שם לקוח</span></th>
+  					<th>מספר עסקה</th>
+  					<th  style=''>תאריך</th>
+  					<th>שעה</th>
+  					<th class='border_table'>סכום</th>
+  					
+  				</tr>
+  				
+  				<tr ng-repeat="pause in filtered=(pauseC.cashes | customFunction1| orderObjectBy:'cash_num':true)" ng-click="choose_cash(this,pause.cash_num)"  class="pause_{{pause.cash_num}}">
+  					<!--<td><span style="font-size:75%">{{pause.SearchClient.SupplierName}}</span></td>-->
+  					<td><span  style="font-size:75%">{{pause.customer_display_name}}</span>
+ 					</td>
+  					<td>{{pause.cash_kupanum|fill_num}}</td>
+  					<td>{{pause.date}}</td>
+  					<td>{{pause.time}}</td>
+  					<td>{{pause.finalamount}}</td>
+  				
+  				</tr>
+  			</table>
+  			<input class="mybtn btngray rightbottom" type="button" value="ביטול"  onclick="$( '.wrap' ).click();">			
+			<input class="mybtn btnblue leftbottom"  type="button" value="כנס לעיסקה"  ng-click="go_in(curr_cash)" >
+			<input class="mybtn btnblue middlebottom"  type="button" value="הדפס עיסקה"  ng-click="printpause(curr_cash)" >
+		</div>
+	</div>

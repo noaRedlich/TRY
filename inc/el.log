@@ -1,0 +1,2 @@
+66INSERT INTO `transactions`(`package_id`, `stock_id`,`CompCount`,PaymntCount, `TranNum`,  `TranDiscount`, `TranCashDiscount`, `TranAmount`, `tChange`, `TranDate`, `TranTime`, `IsRefund`, `user_id`, `vat`, `IsDebtPayment`,  `CashierNum`, `ClubDealFlag`, `CustID`, `RefundMode`)
+			VALUES (2458,1314, 1,1,0001,  0, 0, 219, 0, '2015-02-26','17:21:17', 0, 601,39.42, 0,0, 0, 0, 0)

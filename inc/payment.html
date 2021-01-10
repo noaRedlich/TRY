@@ -1,0 +1,343 @@
+
+<div class="popup pop_peulot popup_pay add_worker" ng-controller="PaymentController  as payment">
+		<!--<img src="images/box_large.png" class="img_wrap"/>	-->		
+		<div class="container_pop add_worker" ng-controller="WorkerController  as workers">
+			<h2 class="relative">סה"כ לתשלום: <span style="font-size: 100%">₪</span><span class="span_sum zerofloat">{{amount}}</span></h2>
+			<h5>הוסף עובד למכירה:</h5>
+			
+			<table class="workers_tb" style="width: 93%;">
+				<tr>
+					 <th>שם עובד</th>
+					 <th>טלפון</th>
+					 <th>נייד</th>
+					 <th>אימייל</th>
+					 <th>מס"ד</th>
+					 <th></th>
+				</tr>
+				
+				<tr class="worker_{{worker1.WorkerNum}}" ng-repeat="worker1 in workerslist" data-id="{{worker1.WorkerNum}}" ng-click="workers.choose_worker(this,worker1.WorkerNum)" >
+					<td>{{worker1.SupplierName}}</td>
+					<td>{{worker1.Phone}}</td>
+					<td>{{worker1.CellPhone}}</td>
+					<td>{{worker1.Email}}</td>
+					<td>{{worker1.WorkerNum}}</td>
+					<td><i  class='fa fa-check-circle display'></i></td>
+				</tr>		
+			</table>
+			<input class="mybtn btngray rightbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+			<input class="mybtn btnblue leftbottom"  ng-click="workers.save_choose();openwrap2('.add_worker.container_pop','.type_pay.container_pop');" type="button" value="בחירה">
+		</div>
+		
+		<div class="container_pop type_pay display" >
+			<h2 class="relative">סה"כ לתשלום: <span style="font-size: 100%">₪</span><span class="span_sum zerofloat">{{amount}}</span></h2>
+			<h5>בחר אמצעי תשלום:</h5>
+			<div class="type_half right" >
+				 <!--localStorage.getItem('products');-->
+				<div class="type_b">
+					<input class="mybtn btnorange " type="button" value="מזומן" ng-click="openwrap2('.type_pay.container_pop','.mezuman.container_pop');payment.init_sum()">
+					<input class="mybtn btnblue " type="button" value="המחאה"  ng-click="openwrap2('','.amchaa.container_pop');payment.init_sum()">
+					<input class="mybtn btngreen " type="button" value="אשראי"  ng-click="openwrap2('','.ashray.container_pop');payment.init_sum()">
+					<input class="mybtn btngreen " type="button" value="אשראי ידני"  ng-click="openwrap2('','.ashray_yadany.container_pop');payment.init_sum()">
+				</div>
+				<div class="type_s right type_b">
+					<input class="mybtn btngray " type="button" value="שובר"   ng-click="openwrap2('','.shovar.container_pop');payment.init_sum()">
+					<input class="mybtn btngray " type="button" value="כרטיס מתנה" ng-click="openwrap2('','.prifeyd.container_pop');payment.init_sum();prepaid_start();">
+					<input class="mybtn btngray " type="button" value="שובר זיכוי"  ng-click="openwrap2('','.shovarzicuy.container_pop');payment.init_sum();start_shovarzivuy();">
+					<input class="mybtn btnlightgray " type="button" value="יציאה" ng-click="payment.is_charge()">
+				</div>
+				<div class="type_s left type_b">
+					<input class="mybtn btngray " type="button" value="הקפה"   ng-click="openwrap2('','.akafa.container_pop');payment.init_sum()">
+					<input class="mybtn btngray " type="button" value="סילאריקס">
+					<input class="mybtn btngray " type="button" value="אחר">
+					<!--<input class="mybtn btnblue " type="button" value="אישור" class="end_btn"  ng-click="cashc.end_cash(0)" onclick="$('input[type=text]').val('');$('.text').val('');openwrap2('','.finish.container_pop')">-->
+				</div>
+			</div>
+			
+			<input type="hidden" name="helpsum"/>
+			<div class="type_half left">
+				
+				<table class="workers_tb">
+					<tr>
+						 <th>סוג תשלום</th>
+						 <th>סכום</th>
+						 <th  ng-click="payment.add_type('.mezuman_sum','מזומן')"></th>
+					</tr>	
+					<tr  ng-repeat="pay in payments_type.cash">
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('cash',$index)"></i></td>
+					</tr>						
+					<tr  ng-repeat="pay in payments_type.cheque" >
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('cheque',$index)"></i></td>
+					</tr>	
+					<tr  ng-repeat="pay in payments_type.credit">
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('credit',$index)"></i></td>
+					</tr>
+					<tr  ng-repeat="pay in payments_type.akafa">
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('akafa',$index)"></i></td>
+					</tr>
+					<tr  ng-repeat="pay in payments_type.shovar">
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('shovar',$index)"></i></td>
+					</tr>
+					<tr  ng-repeat="pay in payments_type.shovarzicuy">
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('shovarzicuy',$index)"></i></td>
+					</tr>
+					<tr  ng-repeat="pay in payments_type.prepaid">
+						<td>{{pay.type}}</td>
+						<td>{{pay.amount}}</td>
+						<td><i class="fa fa-times-circle" ng-click="payment.remove_item('prepaid',$index)"></i></td>
+					</tr>
+				</table>
+			</div>
+			<div class="leftbottom">
+				<p class="pay_p"><span class="right">התקבל:</span><span class="left" style="width: 25px;font-size: 105%;"> ₪ </span><span class="left type_finall_sum zerofloat">{{paid}}</span></p>
+				<p class="itra_p"><span class="right">יתרה לתשלום:</span><span class="left" style="width: 25px;font-size: 105%;"> ₪ </span><span class="left span_sum span_itra zerofloat">{{itra_calc()}}</span></p>
+			</div>
+		</div>
+		<div class="container_pop mezuman display" >
+			<h2 class="relative">תשלום במזומן</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat" style="color: #fa6f58;">{{itra}}</span></h5>
+			<input type="text" value="{{itra}}" id="mezuman_itra" class="input_sum mezuman_sum zerofloat" onchange="if($(this).val()=='')$(this).val(0.00);" ng-blur="payment.calc2($('mezuman_sum').val())"/>
+			<div class="shtar">
+				<img src="images/money8.png"  ng-click="payment.calc1('200')">
+				<img src="images/money2.png"  ng-click="payment.calc1('100')">
+				<img src="images/money1.png"  ng-click="payment.calc1('50')">
+				<img src="images/money7.png"  ng-click="payment.calc1('20')">				
+			</div>
+			<div class="matbea">
+				<img src="images/money3.png" ng-click="payment.calc1('10')">
+				<img src="images/money6.png" ng-click="payment.calc1('5')">
+				<img src="images/money9.png" ng-click="payment.calc1('2')">
+				<img src="images/money10.png" ng-click="payment.calc1('1')">
+				<img src="images/money5.png" ng-click="payment.calc1('0.5')">
+				<img src="images/money4.png" ng-click="payment.calc1('0.1')">
+			</div>
+			<input class="mybtn btnlightgray rightbottom" type="button" value="2ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			<input class="mybtn btnblue leftbottom" type="button" value="אישור"  ng-click="payment.check_end2('.mezuman');payment.add_type('.mezuman_sum','מזומן');cashc.checkend();" >
+		</div>
+		<div class="container_pop finish display">
+			<h2 class="relative">סיום עסקה</h2>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העסקה בוצעה בהצלחה</p>	
+			<p  style="font-size: 224%; " class="change">עודף: {{itraAbs}}</p>			
+		</div>
+		<div class="container_pop amchaa display">			
+			<h2 class="relative" >תשלום בהמחאה</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat"  style="color: #fa6f58;">{{itra}}</span></h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="0.00" class="text amchaa_sum input_sum zerofloat" />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר המחאה:</p>
+					<p>תאריך:</p>
+					<p>מספר בנק:</p>
+					<p>מספר סניף:</p>
+					<p>מספר חשבון:</p>
+				</div>
+				
+				<div style="width:60%;float:left">
+					<input name="chequenumber" class="text required" />
+					<input type="date" id=""  name="chequepaymentdate"  class="text required" />
+					<input name="chequebanknumber"  class="text required" />
+					<input name="chequebranch"  class="text required" />
+					<input name="chequeaccountnumber" class="text required" />
+				</div>	
+			</form>
+
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+				<!--<input class="mybtn btngreen " type="button" value="בדיקת המחאה" onclick="openwrap2('','')">-->
+				<input class="mybtn btnorange " type="button" value="מחולל התשלומים" onclick="$('input[name=mecholel_numtash]').val('2');get_val('.amchaa_sum','.amchaa_frm  .mecholelsum_text');calc_tash('1');openwrap2('','.mecholel_amchaa.container_pop');init_sum()">
+				<input class="mybtn btnblue " type="button" value="אישור" ng-click="payment.check_end2('.mecholelsum_text');payment.add_type('.amchaa_sum','המחאה');cashc.checkend();" >
+			</div>
+		</div>
+		<div class="container_pop ashray display"> 
+			<h2 class="relative">תשלום באשראי</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat" style="color: #fa6f58;">{{itra}}</span></h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="0.00" class="text input_sum ashray_text zerofloat" />		
+				<input type="text" style="  background: transparent; border: transparent;  outline: none;color:transparent;position: absolute" value="" class="text input_num ashray_text zerofloat" />			
+			</form>			
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס אשראי</p>
+			<input class="mybtn btnorange " type="button" value="הקלדה ידנית" style="width: 64%;"onclick="openwrap2('','.ashray_yadany.container_pop');init_sum()"> 
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			<input class="mybtn btnblue leftbottom" type="button" value="אישור" ng-click="payment.check_end2('.ashray');payment.add_type('.ashray_text','אשראי');cashc.checkend();"   >
+		</div>
+		<div class="container_pop ashray_yadany display">
+			<h2 class="relative">תשלום באשראי - ידני</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat"  style="color: #fa6f58;">{{itra}}</span></h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="0.00" class="input_sum text ashray_yadany_text zerofloat" />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר כרטיס:</p>
+					<p>תוקף כרטיס:</p>
+					<p>cvv:</p>
+					<p>תשלומים:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input class="text" name="ashray_numcard"/>
+					<input  class="text" name="ashray_tokef"/>
+					<input  class="text" name="ashray_cvv"/>
+					<input  class="text" style="display: none" name="ashray_tashlumim"/>
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+				<input class="mybtn btnorange " type="button" value="אופציות אשראי" onclick="openwrap2('','.option_ashray.container_pop');init_sum()">
+				<input class="mybtn btnblue " type="button" value="אישור" ng-click="payment.check_end2('.ashray_yadany');get_val('.ashray_yadany_text','.ashray_text');payment.add_type('.ashray_text','אשראי ידני');cashc.checkend();">
+			</div>
+		</div>
+		<div class="container_pop mecholel_amchaa display">
+			<h2 class="relative">מחולל תשלומים</h2>
+			<form class="amchaa_frm" style="width: 80%;">
+				<div style="width:48%;margin-right: 2%;float:right">
+					<p style="margin-top: 10px;">סכום סה"כ:</p>
+					<p>מספר תשלומים:</p>
+					<p>סכום תשלום ראשון:</p>
+					<p>סכום תשלום שני ומעלה:</p>
+					<p>תאריך פרעון שיק ראשון:</p>
+					<p>מס' שיק  \ שובר ראשון:</p>
+					<p>פרטי  בנק:</p>
+					<p>מספר חשבון:</p>
+				</div>
+				<div style="width:50%;float:left">
+					<input  class="text mecholelsum_text input_sum zerofloat" style="margin-top: 10px;" onchange="calc_tash('1')"/>
+					<input  class="text"  name="mecholel_numtash" onchange="calc_tash('0')" required="required" value="2"/>
+					<input  class="text"  name="mecholel_firstsum" onchange="calc_tash1()"/>
+					<input  class="text"  name="mecholel_secsum"/>
+					<input type="date"  class="text"  name="mecholel_datefirst"/>
+					<input  class="text"  name="mecholel_numcheck"/>
+					<input  class="text"  name="mecholel_bank" style="width: 48%;float:right"/>
+					<input  class="text"  name="mecholel_snif" style="width: 48%;float:left"/>
+					<input  class="text"  name="mecholel_bill"/>
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.amchaa.container_pop')">
+				<input class="mybtn btnorange " type="button" value="אופציות אשראי" style="visibility: hidden" onclick="init_sum()">
+				<!--<input class="mybtn btngreen " type="button" value="בדיקת המחאה" onclick="openwrap2('','.mecholel.container_pop')">-->
+				<input class="mybtn btnorange " type="button" value="חולל" ng-click="check_end2('.mecholelsum_text');payment.cholel();cashc.checkend();" >
+			</div>
+		</div>
+		<div class="container_pop mecholel display">
+			<h2 class="relative">מחולל תשלומים</h2>
+			<form class="amchaa_frm" style="width: 80%;">
+				<div style="width:48%;margin-right: 2%;float:right">
+					<p style="margin-top: 10px;">סכום סה"כ:</p>
+					<p>סכום תשלום ראשון:</p>
+					<p>תאריך פרעון שיק ראשון:</p>
+					<p>מס' שיק  \ שובר ראשון:</p>
+					<p>מס' בנק:</p>
+					<p>מספר סניף:</p>
+					<p>מספר חשבון:</p>
+				</div>
+				<div style="width:50%;float:left">
+					<input  class="text mecholelsum_text input_sum zerofloat" style="margin-top: 10px;"/>
+					<input  class="text"  name="mecholel1_firstsum"/>
+					<input type="date"  class="text"  name="mecholel1_datefirst"/>
+					<input  class="text"  name="mecholel1_numcheck"/>
+					<input  class="text"  name="mecholel1_bank"/>
+					<input  class="text"  name="mecholel1_snif"/>
+					<input  class="text"  name="mecholel1_bill"/>
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="אופציות אשראי" style="visibility: hidden">
+				<!--<input class="mybtn btngreen " type="button" value="בדיקת המחאה" onclick="openwrap2('','.mecholel.container_pop')">-->
+				<input class="mybtn btnorange " type="button" value="חולל" onclick="openwrap2('','.ashray_yadany.container_pop');get_val('.mecholel .mecholelsum_text','.ashray_yadany_text')">
+			</div>
+		</div>
+		<div class="container_pop option_ashray display">
+			<h2 class="relative">אופציות אשראי</h2>
+			<h5>הוסף פרטים:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="" class="optionsashray_sum text input_sum" />
+				<div style="width:38%;margin-right: 2%;float:right">
+					<p>תעודת זהות:</p>
+					<p style="line-height: 19px;">3 ספרות אחרונות בגב הכרטיס:</p>
+					<p>סוג מטבע:</p>
+					<p>מספר אישור:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" name="optionsashray_tz"/>
+					<input  class="text" name="optionsashray_threenum"/>
+					<select class="text" name="optionsashray_currency">
+						<option>שקל</option>
+						<option>שטר</option>
+					</select>
+					<input  class="text" name="optionsashray_numishur"/>
+				</div>	
+			</form>
+			
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.ashray_yadany.container_pop')">
+			<input class="mybtn btnblue leftbottom" type="button" value="אישור" onclick="openwrap2('','.ashray_yadany.container_pop');">
+		</div>
+		<div class="container_pop shovar display">
+			<h2 class="relative">תשלום שובר</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat"  style="color: #fa6f58;">{{itra}}</span></h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" class="text shovar_sum input_sum zerofloat" value="0.00"  />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר שובר:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" name="shovar_num"/>
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+				<!--<input class="mybtn btnorange " type="button" value="אופציות אשראי" onclick="openwrap2('','.option_ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="מחולל התשלומים" onclick="openwrap2('','.mecholel.container_pop')">-->
+				<input class="mybtn btnblue " type="button" value="אישור" ng-click="check_end2('.shovar');payment.add_type('.shovar_sum','שובר');cashc.checkend();"  >
+			</div>
+		</div>
+		
+		<div class="container_pop shovarzicuy display">
+			<h2 class="relative">תשלום שובר זיכוי</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat"  style="color: #fa6f58;">{{itra}}</span></h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" class="text shovarzicuy_sum input_sum zerofloat" value="0.00"  />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר שובר:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" name="shovarzicuy_num" />
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+				<!--<input class="mybtn btnorange " type="button" value="אופציות אשראי" onclick="openwrap2('','.option_ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="מחולל התשלומים" onclick="openwrap2('','.mecholel.container_pop')">-->
+				<input class="mybtn btnblue " type="button" value="אישור" ng-click="payment.add_type('.shovarzicuy_sum','שובר זיכוי');cashc.checkend();"  >
+			</div>
+		</div>
+		
+		<div class="container_pop prifeyd display">
+			<h2 class="relative">תשלום פריפייד</h2>
+			<h5>לתשלום:<span style="font-size: 100%;color: #fa6f58;">₪</span><span class="span_sum zerofloat"  style="color: #fa6f58;">{{itra}}</span></h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="0.00" class="text zerofloat prepaid_sum input_sum" ng-blur="prepaid_start();"/>					
+			</form>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס פריפייד</p>
+			<!--style="background: transparent;border: transparent;color: transparent;outline: transparent;" -->
+			<input type="text" name="prepaid_num" class="zerofloat prepaid_num"  />
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			<input class="mybtn btnblue leftbottom" ng-click="payment.add_type('.prepaid_sum','פריפייד');cashc.checkend();"   type="button" value="לתשלום">
+		</div>
+		<akafa></akafa>
+		
+	</div>

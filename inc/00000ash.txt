@@ -1,0 +1,1 @@
+{"code":1004,"message":"בקשה אל שבא חזרה עם שגיאה","userError":true,"shvaErrorCode":"999","emvErrorResponse":{"statusResult":416,"statusResultDes":"תאריך תוקף לא במבנה תקין","f39":""}}

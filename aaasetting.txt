@@ -1,0 +1,1 @@
+[{"PrintOnExitOrEnter":"0","ShowDaysReport":"1"}]

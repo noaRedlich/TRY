@@ -1,0 +1,13 @@
+{"loginDetails":{"terminalId": "50003312","username": "adris","password": "osK9uDip"}, 
+	"transactionCommitting": { "track2": "4580080108535222=19051210000001912000",
+	"cardNumber":"",     
+	"cardExpirationDate":"",    
+	"cvv":"",
+	"cardHolderId":"",
+	 "transactionType": "DEBIT",
+	 "transactionCode": "SIGNATURE_ONLY_TRANSACTION", "amount": "60", "numberOfPayments": "",
+	  "firstPaymentAmount": "", "paymentAmount": "", "cardHolderName": "",  
+	  "comments": "", "currency": "NIS_CURRENCY", "creditTerms": "REGULAR_CREDIT", "customerFirstName": "Erez",
+	"customerLastName": "Attia", "customerPhoneNumber": "", "customerEmail": "",
+		"requestType": "QUERY_EXECUTION_IN_ACCORDANCE_WITH_THE_TERMINAL", "approvalNumber": "", 
+		"userData": "", "creditCardCompanyAdditionalData": "" } }

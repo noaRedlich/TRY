@@ -1,0 +1,1 @@
+select WorkerNum,HourSalary,WorkerName from vcx_salota.workers where (WorkerNum='2') and Status=1

@@ -1,0 +1,14 @@
+
+	select ld.quick_item,Title,BarCode,ProductGroup,ld.picture,ProductGroup as department,t.sum_saled,CASE
+           WHEN lse.SalePrice is NULL THEN ld.SalePrice          
+           ELSE lse.SalePrice
+        END as SalePrice,ld.ID as ID, Unit, 
+        (select group_concat(distinct d.name SEPARATOR  ' , ') from discount_item di join discount d on di.discount_id = d.id 
+        where di.item_id = ld.ID and curdate() between d.begin_date and d.end_date) as discount_desc
+         from  vcx_marinada.listingsDB as ld 
+          LEFT outer JOIN vcx_marinada.listingsStocksElements as lse on lse.ListingID=ld.ID and lse.StockID=3154 
+          LEFT outer JOIN   
+(SELECT listing_id ,sum(StockAmount) as sum_saled FROM vcx_marinada.transactioncomponents group by listing_id) as t on ld.ID=t.listing_id 
+where ld.active='yes'
+and ProductGroup in (SELECT ID FROM vcx_marinada.listingsCategories where ID>0  and ( stock_id=3154 or stock_id=0))
+ group by ID order by t.sum_saled desc

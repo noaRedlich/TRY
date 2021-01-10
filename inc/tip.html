@@ -1,0 +1,22 @@
+	<div class="popup pop_tip" ng-controller="TipController as tipC" >
+		<!--<img src="images/box_small.png" class="img_wrap"/>	-->	
+		<div class="container_pop tip" >
+			<div class="tip_half right">
+				<input class="mybtn tip_btn" name="shch" style="width:17%;position: absolute;top: 0;right:0" type="button" value="₪" ng-click="tip_btn('.container_pop.tip input[name=shch]');calc_tip()">
+				<input  type="text" class="text tip_txt tip_txt2" name="tip_all" style="width:59%" value="{{tip}}"  ng-blur="calc_tip()"/>
+				<input class="mybtn btnorange" name="achuz" style="width:17%;position: absolute;top: 0;left:0" type="button" value="%"  ng-click="tip_btn('.container_pop.tip input[name=achuz]');calc_tip()">
+			</div>
+			<div class="tip_half left">
+				<div style="width:49%;margin-right: 2%;float:right">
+					<p class="forty" style="  font-size: 117%;">ס. ביניים מקורי:</p>
+					<p class="forty " style="color: #e65844; font-size: 117%;">ס. ביניים חדש:</p>
+					<input class="mybtn btngray  zerofloat2" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+				</div>
+				<div style="width:49%;float:left">
+					<input  class="text s_original  zerofloat2" value="{{amount}}">
+					<input  class="text s_new  zerofloat2" value="{{(amount-0) + (tip2-0)}}" style="color: #e65844;background: #fdeeec;border:1px solid #e65844"/>
+					<input class="mybtn btnblue  " type="button" value="הוסף טיפ"  ng-click="end_tip()">
+				</div>	
+			</div>
+		</div>		
+	</div>

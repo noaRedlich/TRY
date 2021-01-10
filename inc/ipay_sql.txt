@@ -1,0 +1,1 @@
+select `IpayPassword`,`IpayUserName`,`IpayTerminalId` from vcx_weberp.userdata  WHERE `office_user_id`=629 

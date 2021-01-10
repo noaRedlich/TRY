@@ -1,0 +1,1 @@
+select StockName,ID,Mikud,Email,Fax,Phone,Address,name_for_cashbox from vcx_weberp.listingsStocks where TerminalID=50003391 and user_ID=920

@@ -1,0 +1,447 @@
+<div class="popup pop_sett   mainarea2" ng-controller="SettingsController" style="display: none">
+  <settmenu></settmenu>
+  <div class="container_pop an enterpage" style="background: none;border:none;">
+    <h3 style="background: none;color: #2fa3ca;font-size: 350%;">הגדרות - מסך כניסה</h3>
+  </div>
+  <div class="container_pop an details" style="background: none;border:none;">
+
+    <div class="part">
+      <label class="st_det_name sett_required sett_recepit">שם עסק <span>(חובה)</span></label>
+      <input type="text" id="st_det_name" value="{{details_list['name']}}"/>
+      <label class="st_det_tz sett_required sett_recepit">ח.פ ע.מ <span>(חובה)</span></label>
+      <input type="text" id="st_det_tz" disabled value="{{details_list['tz']}}"/>
+      <label class="st_det_tel" ng-class="details_list['print_tel']=='1' ? 'sett_recepit': ''">טלפון<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_tel')"></i></label>
+      <input type="text" id="st_det_tel" value="{{details_list['tel']}}"/>
+      <label class="st_det_fax" ng-class="{sett_recepit: details_list['print_fax']=='1'}">פקס<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_fax')"></i></label>
+      <input type="text" id="st_det_fax" value="{{details_list['fax']}}"/>
+      <label class="st_det_address" ng-class="{sett_recepit: details_list['print_address']=='1'}">כתובת / תיבת דואר<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_address')"></i></label>
+      <input type="text" id="st_det_address" value="{{details_list['address']}}"/>
+      <label class="st_det_mikud" ng-class="{sett_recepit: details_list['print_mikud']=='1'}">מיקוד<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_mikud')"></i></label>
+      <input type="text" id="st_det_mikud" value="{{details_list['mikud']}}"/>
+      <p class=""><i class="fa fa-check-circle check_recepit"></i> סמן מה ברצונך שיופיע על הקבלה</p>
+    </div>
+    <div class="part">
+
+      <label class="st_det_mail" ng-class="{sett_recepit: details_list['print_mail']=='1'}">דוא"ל<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_mail')"></i></label>
+      <input type="text" id="st_det_mail" value="{{details_list['mail']}}"/>
+      <label class="st_det_web" ng-class="{sett_recepit: details_list['print_web']=='1'}">אתר אינטרנט<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_web')"></i></label>
+      <input type="text" id="st_det_web" value="{{details_list['web']}}"/>
+      <label class="st_det_barkod_len sett_recepit">אורך ברקוד מקסימלי להדפסה</label>
+      <input type="text" id="st_det_barkod_len" string-to-number value="{{details_list['barkod_len']}}"/>
+      <label class="st_det_desc_len sett_recepit">אורך תיאור מקסימלי להדפסה</label>
+      <input type="text" id="st_det_desc_len" string-to-number value="{{details_list['desc_len']}}"/>
+      <label class="st_det_total_len sett_recepit">אורך סה"כ מקסימלי להדפסה</label>
+      <input type="text" id="st_det_total_len" string-to-number value="{{details_list['total_len']}}"/>
+    </div>
+    <div class="part">
+      <label class="st_det_logo" ng-class="{sett_recepit: details_list['print_logo']=='1'}">לוגו<i
+          class="fa fa-check-circle" ng-click="add_to_recepit('print_logo')"></i></label>
+      <form action="inc/functions.php?save_details1=1" method="post" enctype="multipart/form-data">
+        <input type="file" name="up_logo" id="st_det_logo"/>
+        <input type="submit"/>
+      </form>
+
+
+      <img src="images/logosett.png"/>
+      <p style="font-size: 120%;margin-bottom: 11%;">(יש להעלות קובץ בפורמט PNG / JPG בגודל מסגרת 250X100 פיקסל )</p>
+      <label class="st_det_comments" ng-class="{sett_recepit: details_list['print_comments']=='1'}"> הערות<span
+          class="colorblue">(יודפס בתחתית הקבלה)</span> <i class="fa fa-check-circle"
+                                                           ng-click="add_to_recepit('print_comments')"></i></label>
+      <input type="text" id="st_det_comments" value="{{details_list['comments']}}"
+             style="height: 150px;margin: 0;margin-bottom: 4%;"/>
+
+
+      <input class="mybtn btngray   leftbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+      <input class="mybtn btnblue  leftbottom2 " type="button" value="שמירה" ng-click="save_details();">
+    </div>
+  </div>
+
+  <div class="container_pop an prefers" style="background: none;border:none;display: none" ng-controller="SettingsStat">
+
+    <div class="part">
+      <label class="sett_required ">שפה <span></span></label>
+      <select class="pr_langs">
+        <option value="he">עברית</option>
+        <option value="en">ENGLISH</option>
+      </select>
+      <label class="sett_required ">מטבע <span></span></label>
+      <select class="pr_currency">
+        <option value="ils">ILS</option>
+        <option value="usd">USD</option>
+      </select>
+      <label>ערכת עיצוב</label>
+      <div class="themes pr_themes">
+        <div class="theme_select " onclick="$('.theme_select div').toggleClass('display')">
+          <div class="first"><img ng-src="{{img}}"/></div>
+          <div class="display" ng-click="theme('theme2',1,'logoex.png')"><img src="images/color1.png"/></div>
+          <div class="display" ng-click="theme('theme3',2,'logoex.png')"><img src="images/color2.png"/></div>
+          <div class="display" ng-click="theme('',3,'logoex.png')"><img src="images/color3.png"/></div>
+          <div class="display" ng-click="theme('theme4',4,'leumi.png')"><img src="images/color4.png"/></div>
+          <div class="display" ng-click="theme('theme5',5,'orange.png')"><img src="images/color5.png"/></div>
+        </div>
+      </div>
+      <label>חסום פריט כללי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_global_item"/>
+        <span class="{{prefers_list['pr_global_item']}} pr_global_item" ng-click="set_stat('pr_global_item')">{{prefers_list['pr_global_item']| uppercase}}</span>
+      </div>
+
+
+      <label class="sett_slika ">שרותי סליקה</label>
+      <select class="pr_slika">
+        <option>ipay</option>
+        <option>easycard</option>
+        <option>pelecard</option>
+        <option>tranzilla</option>
+      </select>
+      <label class="masof">מספר מסוף קופה</label>
+      <input type="text" id="pr_masof" value="{{prefers_list[pr_masof]}}"/>
+      <label class="prefer_viewprod">תצוגת מוצרים מהירים</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewprod"/>
+        <span class="{{prefers_list['pr_viewprod']}} pr_viewprod" ng-click="set_stat('pr_viewprod')">{{prefers_list['pr_viewprod']| uppercase}}</span>
+      </div>
+
+      <label class="prefer_viewprod">משקל ללא מע"מ</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_weight_no_vat"/>
+        <span class="{{prefers_list['pr_weight_no_vat']}} pr_weight_no_vat" ng-click="set_stat('pr_weight_no_vat')">{{prefers_list['pr_weight_no_vat']| uppercase}}</span>
+      </div>
+
+    </div>
+    <div class="part">
+      <label>הצגת  מס' רכב </label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_save_mizdamen"/>
+        <span class="{{prefers_list['pr_save_mizdamen']}} pr_save_mizdamen"
+              ng-click="set_stat('pr_save_mizdamen')">{{prefers_list['pr_save_mizdamen']| uppercase}}</span>
+      </div>
+      
+        <label>הדפסת חשבון זמני</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_print_temp"/>
+        <span class="{{prefers_list['pr_print_temp']}} pr_print_temp"
+              ng-click="set_stat('pr_print_temp')">{{prefers_list['pr_print_temp']| uppercase}}</span>
+      </div>
+
+      <label>תצוגת כפתורים לתשלום מהירים: מזומן</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_mezuman"/>
+        <span class="{{prefers_list['pr_viewpayment_mezuman']}} pr_viewpayment_mezuman"
+              ng-click="set_stat('pr_viewpayment_mezuman')">{{prefers_list['pr_viewpayment_mezuman']| uppercase}}</span>
+      </div>
+      <label>תצוגת כפתורים לתשלום מהירים: המחאה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_amchaa"/>
+        <span class="{{prefers_list['pr_viewpayment_amchaa']}} pr_viewpayment_amchaa"
+              ng-click="set_stat('pr_viewpayment_amchaa')">{{prefers_list['pr_viewpayment_amchaa']| uppercase}}</span>
+      </div>
+      <label>תצוגת כפתורים לתשלום מהירים: אשראי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_credit"/>
+        <span class="{{prefers_list['pr_viewpayment_credit']}} pr_viewpayment_credit"
+              ng-click="set_stat('pr_viewpayment_credit')">{{prefers_list['pr_viewpayment_credit']| uppercase}}</span>
+      </div>
+      <label>תצוגת כפתורים לתשלום מהירים: שובר זיכוי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_shovarzicuy"/>
+        <span class="{{prefers_list['pr_viewpayment_shovarzicuy']}} pr_viewpayment_shovarzicuy"
+              ng-click="set_stat('pr_viewpayment_shovarzicuy')">{{prefers_list['pr_viewpayment_shovarzicuy']| uppercase}}</span>
+      </div>
+      <label>תצוגת כפתורים לתשלום מהירים: הקפה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_akafa"/>
+        <span class="{{prefers_list['pr_viewpayment_akafa']}} pr_viewpayment_akafa"
+              ng-click="set_stat('pr_viewpayment_akafa')">{{prefers_list['pr_viewpayment_akafa']| uppercase}}</span>
+      </div>
+      <label>תצוגת כפתורים לתשלום מהירים: כרטיס מתנה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_prepaid"/>
+        <span class="{{prefers_list['pr_viewpayment_prepaid']}} pr_viewpayment_prepaid"
+              ng-click="set_stat('pr_viewpayment_prepaid')">{{prefers_list['pr_viewpayment_prepaid']| uppercase}}</span>
+      </div>
+      <label>תצוגת כפתורים לתשלום מהירים: שובר</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_viewpayment_shovar"/>
+        <span class="{{prefers_list['pr_viewpayment_shovar']}} pr_viewpayment_shovar"
+              ng-click="set_stat('pr_viewpayment_shovar')">{{prefers_list['pr_viewpayment_shovar']| uppercase}}</span>
+      </div>
+	  
+	  <label>ביטוח המחאות</label>
+	  <div class="switchtoggle">
+	    <input type="text" disabled="disabled" id="pr_show_checkcheque_button"/>
+	    <span class="{{prefers_list['pr_show_checkcheque_button']}} pr_show_checkcheque_button"
+	          ng-click="set_stat('pr_show_checkcheque_button')">{{prefers_list['pr_show_checkcheque_button']| uppercase}}</span>
+	  </div>
+	  
+
+    </div>
+    <div class="part">
+      <label>טיפים</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_tip"/>
+        <span class="{{prefers_list['pr_tip']}} pr_tip" ng-click="set_stat('pr_tip')">{{prefers_list['pr_tip']| uppercase}}</span>
+      </div>
+      <label class="numcust">מספר לקוח</label>
+      <input type="text" id="pr_numcust" value="{{prefers_list['pr_numcust']}}"/>
+      <input type="hidden" id="pr_numcust" value="{{prefers_list['pr_currnumcust']}}"/>
+      <div style="width: 47%; float: right;"><label class="group">מועדון</label>
+        <select id="pr_group" class="advanced_input toclean" ng-model="pr_group" ng-change="change_group(pr_group)"
+                ng-options="GroupName.GroupName for GroupName in  clientgroups track by GroupName.ID"></select></div>
+      <div style="width: 47%; float: left;"><label class="group">הנחת מועדון</label>
+        <input type="text" name="pr_group_p" disabled="disabled" value="{{pr_discount2}}"/></div>
+      <div style="clear:both;"></div>
+      <label class="pr_currpass">סיסמא נוכחית</label>
+      <input type="text" id="pr_currpass"/>
+      <label class="pr_pass ">סיסמא חדשה</label>
+      <input type="text" id="pr_pass" placeholder="הקלד מינימום 8 תוים"/>
+      <label class="pr_pass2 ">הקלד סיסמא שנית</label>
+      <input type="text" id="pr_pass2" placeholder="הקלד מינימום 8 תוים"/>
+
+      <input class="mybtn btngray   leftbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+      <input class="mybtn btnblue  leftbottom2 " type="button" value="שמירה" ng-click="save_prefers();">
+    </div>
+  </div>
+  <div class="container_pop an permission" style="background: none;border:none;display: none"
+       ng-controller="SettingsStat">
+    <div class="part">
+      <label>פתיחת מגירה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_drawer"/>
+        <span class="{{premission_list['permission_open_drawer']}} permission_open_drawer"
+              ng-click="set_stat('permission_open_drawer')">{{premission_list['permission_open_drawer']| uppercase}}</span>
+      </div>
+      <label>פתיחת וסגירת קופה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_kupa"/>
+        <span class="{{premission_list['permission_openclose_kupa']}} permission_openclose_kupa"
+              ng-click="set_stat('permission_openclose_kupa')">{{premission_list['permission_openclose_kupa']| uppercase}}</span>
+      </div>
+      <label>הודעות</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_alerts"/>
+        <span class="{{premission_list['permission_alerts']}} permission_alerts"
+              ng-click="set_stat('permission_alerts')">{{premission_list['permission_alerts']| uppercase}}</span>
+      </div>
+      <label>חיוב עובד/ת בחשבון</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_worker_cash"/>
+        <span class="{{premission_list['permission_worker_cach']}} permission_worker_cach"
+              ng-click="set_stat('permission_worker_cach')">{{premission_list['permission_worker_cach']| uppercase}}</span>
+      </div>
+      <label>אלץ עסקה בהקפה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_force_cash"/>
+        <span class="{{premission_list['permission_force_cash']}} permission_force_cash"
+              ng-click="set_stat('permission_force_cash')">{{premission_list['permission_force_cash']| uppercase}}</span>
+      </div>
+    </div>
+    <div class="part">
+      <label>זיכוי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_zicuy"/>
+        <span class="{{premission_list['permission_zicuy']}} permission_zicuy" ng-click="set_stat('permission_zicuy')">{{premission_list['permission_zicuy']| uppercase}}</span>
+      </div>
+      <label>הנחה למוצר</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_discountprod"/>
+        <span class="{{premission_list['permission_discountprod']}} permission_discountprod"
+              ng-click="set_stat('permission_discountprod')">{{premission_list['permission_discountprod']| uppercase}}</span>
+      </div>
+      <label>הנחה לעיסקה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_discoun"/>
+        <span class="{{premission_list['permission_discount']}} permission_discount"
+              ng-click="set_stat('permission_discount')">{{premission_list['permission_discount']| uppercase}}</span>
+      </div>
+      <label>העדפות מערכת</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_prefer"/>
+        <span class="{{premission_list['permission_prefer']}} permission_prefer"
+              ng-click="set_stat('permission_prefer')">{{premission_list['permission_prefer']| uppercase}}</span>
+      </div>
+      <label>בדיקות</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_checks"/>
+        <span class="{{premission_list['permission_checks']}} permission_checks"
+              ng-click="set_stat('permission_checks')">{{premission_list['permission_checks']| uppercase}}</span>
+      </div>
+    </div>
+    <div class="part">
+      <label class="sett_required ">ניהול עובדים</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_hours"/>
+        <span class="{{premission_list['permission_hours']}} permission_hours" ng-click="set_stat('permission_hours')">{{premission_list['permission_hours']| uppercase}}</span>
+      </div>
+      <label>ניהול שפות</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_langs"/>
+        <span class="{{premission_list['permission_langs']}} permission_langs" ng-click="set_stat('permission_langs')">{{premission_list['permission_langs']| uppercase}}</span>
+      </div>
+      <label>חיוב עובד/ת בעיסקה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_worker"/>
+        <span class="{{premission_list['permission_worker']}} permission_worker"
+              ng-click="set_stat('permission_worker')">{{premission_list['permission_worker']| uppercase}}</span>
+      </div>
+      <label>כניסה למשרד אחורי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_backoffice"/>
+        <span class="{{premission_list['permission_backoffice']}} permission_backoffice"
+              ng-click="set_stat('permission_backoffice')">{{premission_list['permission_backoffice']| uppercase}}</span>
+      </div>
+      <label>פרטי בית עסק</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="st_details"/>
+        <span class="{{premission_list['permission_details']}} permission_details"
+              ng-click="set_stat('permission_details')">{{premission_list['permission_details']| uppercase}}</span>
+      </div>
+      <input class="mybtn btngray   leftbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+      <input class="mybtn btnblue  leftbottom2 " type="button" value="שמירה" ng-click="save_premission();">
+    </div>
+  </div>
+  <div class="container_pop an alerts" style="background: none;border:none;display: none" ng-controller="SettingsStat">
+    <div class="part">
+      <label>שליחת דוא"ל אלקטרוני</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="lrt_sendemail"/>
+        <span class="{{lrt_list['lrt_sendemail']}} lrt_sendemail" ng-click="set_stat('lrt_sendemail')">{{lrt_list['lrt_sendemail']| uppercase}}</span>
+      </div>
+      <label>כתובת דוא"ל ראשית</label>
+      <input type="text" disabled="disabled" id="st_mainemail"/>
+      <label>כתובת דוא"ל משנית</label>
+      <input type="text" disabled="disabled" id="st_ndemail"/>
+
+    </div>
+    <div class="part">
+      <label class="sett_required ">שליחת SMS</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="lrt_sms"/>
+        <span class="{{lrt_list['lrt_sms']}} lrt_sms"
+              ng-click="set_stat('lrt_sms')">{{lrt_list['lrt_sms']| uppercase}}</span>
+      </div>
+      <label class="sett_required ">מספר נייד</label>
+      <input type="text" disabled="disabled" id="st_name"/>
+
+
+    </div>
+    <div class="part">
+      <label class="sett_required ">הודעה בפתיחת קופה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="lrt_openkupa"/>
+        <span class="{{lrt_list['lrt_openkupa']}} lrt_openkupa" ng-click="set_stat('lrt_openkupa')">{{lrt_list['lrt_openkupa']| uppercase}}</span>
+      </div>
+      <label class="sett_required ">הודעה בסגירת קופה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="lrt_closeup"/>
+        <span class="{{lrt_list['lrt_closeup']}} lrt_closeup" ng-click="set_stat('lrt_closeup')">{{lrt_list['lrt_closeup']| uppercase}}</span>
+      </div>
+      <label>הודעה בפעולת זיכוי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="lrt_zicuy"/>
+        <span class="{{lrt_list['lrt_zicuy']}} lrt_zicuy" ng-click="set_stat('lrt_zicuy')">{{lrt_list['lrt_zicuy']| uppercase}}</span>
+      </div>
+      <input class="mybtn btngray   leftbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+      <input class="mybtn btnblue  leftbottom2 " type="button" value="שמירה" ng-click="save_client();">
+    </div>
+  </div>
+  <div class="container_pop an checks" style="background: none;border:none;display: none">
+    <div class="part">
+      <label>בדיקת מדפסת</label>
+      <input class="mybtn btnblue checkbtn check_print" onclick="printPrinter(['בדיקת מדפסת'])" type="button"
+             value="בדיקה">
+      <label>בדיקת כרטיס אשראי</label>
+      <input class="mybtn btnblue checkbtn check_ashray" type="button" value="בדיקה">
+      <label>בדיקת תקשורת</label>
+      <input class="mybtn btnblue checkbtn check_tikshoret" onclick="checkInternet()" type="button" value="בדיקה">
+
+    </div>
+    <div class="part">
+      <label>כיול מסך מגע</label>
+      <input class="mybtn btnblue checkbtn check_maga" type="button" value="בדיקה">
+      <label>בדיקת חיבור משקל</label>
+      <input class="mybtn btnblue checkbtn check_weight" type="button" value="בדיקה">
+
+    </div>
+    <div class="part">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+
+      <input class="mybtn btngray   leftbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+      <input class="mybtn btnblue  leftbottom2 " type="button" value="שמירה" ng-click="save_client();">
+    </div>
+  </div>
+  <!--sk 07/01/16 out the payments buttons manage-->
+  <div class="container_pop an choose_buttons" style="background: none;border:none;display: none"
+       ng-controller="SettingsStat">
+    <div class="part">
+      <label class="prefer_viewprod">הצגת כפתור מזומן</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_cash_button"/>
+        <span class="{{prefers_list['pr_show_cash_button']}} pr_show_cash_button"
+              ng-click="set_stat_buttons('pr_show_cash_button')">{{prefers_list['pr_show_cash_button']| uppercase}}</span>
+      </div>
+
+      <label class="prefer_viewprod">הצגת כפתור המחאה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_cheque_button"/>
+        <span class="{{prefers_list['pr_show_cheque_button']}} pr_show_cheque_button"
+              ng-click="set_stat_buttons('pr_show_cheque_button')">{{prefers_list['pr_show_cheque_button']| uppercase}}</span>
+      </div>
+      <label class="prefer_viewprod">הצגת כפתור אשראי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_credit_button"/>
+        <span class="{{prefers_list['pr_show_credit_button']}} pr_show_credit_button"
+              ng-click="set_stat_buttons('pr_show_credit_button')">{{prefers_list['pr_show_credit_button']| uppercase}}</span>
+      </div>
+      <label class="prefer_viewprod">הצגת כפתור כרטיס נטען</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_prepaid_button"/>
+        <span class="{{prefers_list['pr_show_prepaid_button']}} pr_show_prepaid_button"
+              ng-click="set_stat_buttons('pr_show_prepaid_button')">{{prefers_list['pr_show_prepaid_button']| uppercase}}</span>
+      </div>
+
+
+    </div>
+    <div class="part">
+      <label class="prefer_viewprod">הצגת כפתור הקפה</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_akafa_button"/>
+        <span class="{{prefers_list['pr_show_akafa_button']}} pr_show_akafa_button"
+              ng-click="set_stat_buttons('pr_show_akafa_button')">{{prefers_list['pr_show_akafa_button']| uppercase}}</span>
+      </div>
+      <label class="prefer_viewprod">הצגת כפתור שובר</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_shovar_button"/>
+        <span class="{{prefers_list['pr_show_shovar_button']}} pr_show_shovar_button"
+              ng-click="set_stat_buttons('pr_show_shovar_button')">{{prefers_list['pr_show_shovar_button']| uppercase}}</span>
+      </div>
+      <label class="prefer_viewprod">הצגת כפתור שובר זיכוי</label>
+      <div class="switchtoggle">
+        <input type="text" disabled="disabled" id="pr_show_shovarzicuy_button"/>
+        <span class="{{prefers_list['pr_show_shovarzicuy_button']}} pr_show_shovarzicuy_button"
+              ng-click="set_stat_buttons('pr_show_shovarzicuy_button')">{{prefers_list['pr_show_shovarzicuy_button']| uppercase}}</span>
+      </div>
+
+    </div>
+    <div class="part">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input style="visibility: hidden" class="mybtn " type="button" value="בדיקה">
+      <input class="mybtn btngray   leftbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+      <input class="mybtn btnblue  leftbottom2 " type="button" value="שמירה" ng-click="save_prefers();">
+    </div>
+  </div>
+  <login></login>
+</div>
+</div>

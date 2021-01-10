@@ -1,0 +1,1 @@
+select * from vcx00.settings_user where user_id='607'

@@ -1,0 +1,1 @@
+1select id,CouponSum from `transactionpayments` where CouponNumber='8590005' and (voucher_used=0 or voucher_used is NULL) and CouponSum<0

@@ -1,0 +1,1 @@
+select * from vcx_josh.listingsSuppliers where (`SupplierName` LIKE  '%666612410001294%' or `CellPhone` LIKE '%666612410001294%' or `ClientNum` LIKE '%666612410001294%'  or `Address` LIKE '%666612410001294%') and isClient=1

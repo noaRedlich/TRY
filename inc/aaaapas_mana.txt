@@ -1,0 +1,1 @@
+select id,pr_pass from vcx00.settings where user_id='955'

@@ -1,0 +1,2 @@
+INSERT INTO vcx_josh.attendance ( id,`worker_id`, `worker_num`, `day`, `entertime`,`user_id`, `terminal_id`, `timestamp`, `sabbat`, `entertime_updated`, `hour_salary`) 
+		VALUES (2,'2','2','2017-08-02','14:26','788',1728,1501673182,0,'2017-08-02 14:26:22','60.00') 

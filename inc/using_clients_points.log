@@ -1,0 +1,1 @@
+INSERT INTO using_clients_points (`client_id` ,`transction_id` , `points`) VALUES (0,89664,1)

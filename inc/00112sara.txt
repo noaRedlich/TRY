@@ -1,0 +1,1 @@
+update  `vcx_weberp`.`listingsStocks` set Phone='077-5349322',Fax='',Mikud='',Email='rami23854@gmail.com',Address='ערערה' where `TerminalID` =50003748

@@ -1,0 +1,1 @@
+select `IpayPassword`,`IpayUserName`,`IpayTerminalId` from vcx_weberp.listingsStocks where Status=1 and user_id = 788 and TerminalID=788
