@@ -1,0 +1,95 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 24/02/2014 12:06:45
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 24/02/2014 12:31:57
+File "tran4500020.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #45 already exists in database.(2041) Checking transactions...
+Found transaction #4500020.
+Transaction #4500020 added. Processing components...
+Product 2570000000108 already exists in stock.
+Stock has been updated for product 2570000000108.
+Product 790000000844 already exists in stock.
+Stock has been updated for product 790000000844.
+Product 2936000000004 already exists in stock.
+Stock has been updated for product 2936000000004.
+Product 8120000000274 already exists in stock.
+Stock has been updated for product 8120000000274.
+Product 2747000000033 already exists in stock.
+Stock has been updated for product 2747000000033.
+Product 2747000000002 already exists in stock.
+Stock has been updated for product 2747000000002.
+Product 2570000000123 already exists in stock.
+Stock has been updated for product 2570000000123.
+Product 16070652 already exists in stock.
+Stock has been updated for product 16070652.
+Product 16070654 already exists in stock.
+Stock has been updated for product 16070654.
+Processing payments...
+Credit card payment found for 1100.00 NIS.
+Credit card payment found for 1223.90 NIS.
+Found payments for total 2323.9 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran4500020.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/02/2014 12:31:57
+File "tran300024.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 24/02/2014 12:31:57
+File "tran300022.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 24/02/2014 12:31:57
+File "tran300021.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+

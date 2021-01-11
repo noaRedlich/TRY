@@ -1,0 +1,512 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 24/03/2014 08:50:32
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Creating package #90........................................done.(2147)
+Processing transactions:
+Found transaction #9000001.
+Transaction #9000001 added. Processing components...
+Product 16070652 already exists in stock.
+Stock has been updated for product 16070652.
+Product 16070653 already exists in stock.
+Stock has been updated for product 16070653.
+Processing payments...
+Credit card payment found for 82.00 NIS.
+Found payments for total 82 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000001.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000002.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000002.
+Transaction #9000002 added. Processing components...
+Product 2570000000173 already exists in stock.
+Stock has been updated for product 2570000000173.
+Processing payments...
+Credit card payment found for 122.55 NIS.
+Found payments for total 122.55 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000002.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000003.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000003.
+Transaction #9000003 added. Processing components...
+Product 42000000984 already exists in stock.
+Stock has been updated for product 42000000984.
+Processing payments...
+Hakafa payment found for 49.00 NIS.
+Found payments for total 49 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000003.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000004.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000004.
+Transaction #9000004 added. Processing components...
+Product 2570000000174 already exists in stock.
+Stock has been updated for product 2570000000174.
+Processing payments...
+Cash payment found for 122.60 NIS.
+Found payments for total 122.6 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000004.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000005.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000005.
+Transaction #9000005 added. Processing components...
+Product 90000000271 already exists in stock.
+Stock has been updated for product 90000000271.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Processing payments...
+Credit card payment found for 331.20 NIS.
+Found payments for total 331.2 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000005.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000006.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000006.
+Transaction #9000006 added. Processing components...
+Product 42000000984 already exists in stock.
+Stock has been updated for product 42000000984.
+Processing payments...
+Credit card payment found for 140.00 NIS.
+Found payments for total 140 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000006.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000007.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000007.
+Transaction #9000007 added. Processing components...
+Product 860000000050 already exists in stock.
+Stock has been updated for product 860000000050.
+Product 42000001444 already exists in stock.
+Stock has been updated for product 42000001444.
+Processing payments...
+Credit card payment found for 169.05 NIS.
+Found payments for total 169.05 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000007.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000008.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000008.
+Transaction #9000008 added. Processing components...
+Product 60013 already exists in stock.
+Stock has been updated for product 60013.
+Product 3800000859 already exists in stock.
+Stock has been updated for product 3800000859.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 2570000000123 already exists in stock.
+Stock has been updated for product 2570000000123.
+Product 3700000006 already exists in stock.
+Stock has been updated for product 3700000006.
+Product 3800000903 already exists in stock.
+Stock has been updated for product 3800000903.
+Processing payments...
+Cash payment found for 400.90 NIS.
+Cheque payment found for 288.00 NIS.
+Cheque payment found for 289.00 NIS.
+Found payments for total 977.9 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000008.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000009.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000009.
+Transaction #9000009 added. Processing components...
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 2974000000008 already exists in stock.
+Stock has been updated for product 2974000000008.
+Product 2570000000044 already exists in stock.
+Stock has been updated for product 2570000000044.
+Product 2747000000002 already exists in stock.
+Stock has been updated for product 2747000000002.
+Product 2570000000131 already exists in stock.
+Stock has been updated for product 2570000000131.
+Processing payments...
+Cash payment found for 1000.40 NIS.
+Cheque payment found for 332.00 NIS.
+Found payments for total 1332.4 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000009.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9000010.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #90 already exists in database.(2147) Checking transactions...
+Found transaction #9000010.
+Transaction #9000010 added. Processing components...
+Product 2683000000007 already exists in stock.
+Stock has been updated for product 2683000000007.
+Product 3800000890 already exists in stock.
+Stock has been updated for product 3800000890.
+Processing payments...
+Credit card payment found for 76.00 NIS.
+Found payments for total 76 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9000010.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9100001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Creating package #91........................................done.(2148)
+Processing transactions:
+Found transaction #9100001.
+Transaction #9100001 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 1.00 NIS.
+Found payments for total 1 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100001.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9100002.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100002.
+Transaction #9100002 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for -1.00 NIS.
+Found refund for total 1 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100002.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9100003.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100003.
+Transaction #9100003 added. Processing components...
+Product 2600177 already exists in stock.
+Stock has been updated for product 2600177.
+Processing payments...
+Credit card payment found for 227.05 NIS.
+Found payments for total 227.05 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100003.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9100004.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100004.
+Transaction #9100004 added. Processing components...
+Product 42000000984 already exists in stock.
+Stock has been updated for product 42000000984.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 2600147 already exists in stock.
+Stock has been updated for product 2600147.
+Product 2747000000002 already exists in stock.
+Stock has been updated for product 2747000000002.
+Product 2614000000015 already exists in stock.
+Stock has been updated for product 2614000000015.
+Processing payments...
+Credit card payment found for 960.45 NIS.
+Found payments for total 960.45 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100004.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:35
+File "tran9100005.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100005.
+Transaction #9100005 added. Processing components...
+Product 42000001458 already exists in stock.
+Stock has been updated for product 42000001458.
+Product 2570000000174 already exists in stock.
+Stock has been updated for product 2570000000174.
+Processing payments...
+Credit card payment found for 254.60 NIS.
+Found payments for total 254.6 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100005.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100006.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100006.
+Transaction #9100006 added. Processing components...
+Product 7180000000126 already exists in stock.
+Stock has been updated for product 7180000000126.
+Product 4000000015 already exists in stock.
+Stock has been updated for product 4000000015.
+Product 3800000812 already exists in stock.
+Stock has been updated for product 3800000812.
+Product 6000000043 already exists in stock.
+Stock has been updated for product 6000000043.
+Product 42000001424 already exists in stock.
+Stock has been updated for product 42000001424.
+Product 16070657 already exists in stock.
+Stock has been updated for product 16070657.
+Product 7180000000134 already exists in stock.
+Stock has been updated for product 7180000000134.
+Processing payments...
+Credit card payment found for 919.30 NIS.
+Found payments for total 919.3 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100006.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100007.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100007.
+Transaction #9100007 added. Processing components...
+Product 790000000712 already exists in stock.
+Stock has been updated for product 790000000712.
+Product 790000000841 already exists in stock.
+Stock has been updated for product 790000000841.
+Processing payments...
+Cheque payment found for 218.00 NIS.
+Found payments for total 218 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100007.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100008.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100008.
+Transaction #9100008 added. Processing components...
+Product 3800000902 already exists in stock.
+Stock has been updated for product 3800000902.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Processing payments...
+Cash payment found for 865.00 NIS.
+Found payments for total 865 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100008.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100009.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100009.
+Transaction #9100009 added. Processing components...
+Product 8200000074 already exists in stock.
+Stock has been updated for product 8200000074.
+Processing payments...
+Credit card payment found for 189.00 NIS.
+Found payments for total 189 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100009.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100010.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100010.
+Transaction #9100010 added. Processing components...
+Product 8120000000274 already exists in stock.
+Stock has been updated for product 8120000000274.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 3700000006 already exists in stock.
+Stock has been updated for product 3700000006.
+Processing payments...
+Hakafa payment found for 870.30 NIS.
+Found payments for total 870.3 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100010.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100011.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100011.
+Transaction #9100011 added. Processing components...
+Product 5400000553 already exists in stock.
+Stock has been updated for product 5400000553.
+Processing payments...
+Credit card payment found for 59.00 NIS.
+Found payments for total 59 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100011.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9100012.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #91 already exists in database.(2148) Checking transactions...
+Found transaction #9100012.
+Transaction #9100012 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Product 3800000860 already exists in stock.
+Stock has been updated for product 3800000860.
+Processing payments...
+Credit card payment found for 228.50 NIS.
+Found payments for total 228.5 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9100012.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "clock.txt". Start processing...
+
+1 lines found. Parsing...........done.
+1 records parsed
+--WARNING--: No exit record found for worker #4, exit time: 2014-03-23 14:38
+Moving clock file to archive as 'clock.2014-03-24.txt'......
+done.
+
+
+-------------------------------------------------------
+Time: 24/03/2014 09:14:36
+File "tran9200001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #92 already exists in database.(2146) Checking transactions...
+Found transaction #9200001.
+Transaction #9200001 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 1.00 NIS.
+Found payments for total 1 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9200001.xml'.....
+done.
+

@@ -1,0 +1,76 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 28/02/2014 08:41:16
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 28/02/2014 08:44:28
+File "tran5400006.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #54 already exists in database.(2064) Checking transactions...
+Found transaction #5400006.
+Transaction #5400006 added. Processing components...
+Product 2937000000000 already exists in stock.
+Stock has been updated for product 2937000000000.
+Product 2830000000041 already exists in stock.
+Stock has been updated for product 2830000000041.
+Product 2830000000044 already exists in stock.
+Stock has been updated for product 2830000000044.
+Product 2747000000019 already exists in stock.
+Stock has been updated for product 2747000000019.
+Product 9250000000184 already exists in stock.
+Stock has been updated for product 9250000000184.
+Product 790000000851 already exists in stock.
+Stock has been updated for product 790000000851.
+Product 7180000000062 already exists in stock.
+Stock has been updated for product 7180000000062.
+Product 7180000000139 already exists in stock.
+Stock has been updated for product 7180000000139.
+Product 790000000856 already exists in stock.
+Stock has been updated for product 790000000856.
+Product 90000000261 already exists in stock.
+Stock has been updated for product 90000000261.
+Product 2570000000152 already exists in stock.
+Stock has been updated for product 2570000000152.
+Product 2747000000035 already exists in stock.
+Stock has been updated for product 2747000000035.
+Product 2747000000024 already exists in stock.
+Stock has been updated for product 2747000000024.
+Product 2570000000163 already exists in stock.
+Stock has been updated for product 2570000000163.
+Product 60013 already exists in stock.
+Stock has been updated for product 60013.
+Product 2600104 already exists in stock.
+Stock has been updated for product 2600104.
+Product 3700000003 already exists in stock.
+Stock has been updated for product 3700000003.
+Product 4001727 already exists in stock.
+Stock has been updated for product 4001727.
+Processing payments...
+Cash payment found for 3766.50 NIS.
+Found payments for total 3766.5 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran5400006.xml'.....
+done.
+

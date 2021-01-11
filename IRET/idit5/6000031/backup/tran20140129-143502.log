@@ -1,0 +1,75 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 29/01/2014 14:32:51
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.-------------------------------------------------------
+Time: 29/01/2014 14:35:02
+File "tran900018.xml". Start processing...
+
+Terminal ID in file - 6000011, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #6000011
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+Terminal 6000011 found in user database and is active.
+Package #9 already exists in database.(9) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #900018.
+--WARNING--: Transaction #900018 already exists in database with different date.
+Processing of duplicate packages is FORBIDDEN.
+Transaction skipped.
+File processing complete.
+Moving transaction file to archive as 'tran900018.xml'......
+FAIL! (/home/mlaitech/mlaitech.info/IRET/iret/6000011/tran900018.xml -> /home/mlaitech/mlaitech.info/IRET/iret/6000011/backup/tran900018.xml)
+
+-------------------------------------------------------
+Time: 29/01/2014 14:35:02
+File "tran900011.xml". Start processing...
+
+Terminal 6000011 found in user database and is active.
+Package #9 already exists in database.(9) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #900011.
+--WARNING--: Transaction #900011 already exists in database with different date.
+Processing of duplicate packages is FORBIDDEN.
+Transaction skipped.
+File processing complete.
+Moving transaction file to archive as 'tran900011.xml'......
+FAIL! (/home/mlaitech/mlaitech.info/IRET/iret/6000011/tran900011.xml -> /home/mlaitech/mlaitech.info/IRET/iret/6000011/backup/tran900011.xml)
+
+-------------------------------------------------------
+Time: 29/01/2014 14:35:02
+File "tran900017.xml". Start processing...
+
+Terminal 6000011 found in user database and is active.
+Package #9 already exists in database.(9) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #900017.
+--WARNING--: Transaction #900017 already exists in database with different date.
+Processing of duplicate packages is FORBIDDEN.
+Transaction skipped.
+File processing complete.
+Moving transaction file to archive as 'tran900017.xml'......
+FAIL! (/home/mlaitech/mlaitech.info/IRET/iret/6000011/tran900017.xml -> /home/mlaitech/mlaitech.info/IRET/iret/6000011/backup/tran900017.xml)
+

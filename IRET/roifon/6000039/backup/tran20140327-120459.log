@@ -1,0 +1,58 @@
+
+Base terminal: 6000039
+Scanning for terminal #6000039
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: N
+- Force all codes: Yes
+- Last plu check: 27/03/2014 09:52:51
+Checking for terminal updates...
+File "pludta" was updated successfully
+Copying to 'pluupdate'......................................done.
+File "deps" was updated successfully
+No update needed for file "club.dat"
+No update needed for file "workers.dat"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 27/03/2014 12:04:59
+File "transz3.xml". Start processing...
+
+Terminal 6000039 found in user database and is active.
+Creating package #3.........................................done.(2)
+Processing transactions:
+Found transaction #300001.
+Transaction #300001 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 45.00 NIS.
+Found payments for total 45 NIS.
+Found transaction #300002.
+Transaction #300002 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 236.00 NIS.
+Found payments for total 236 NIS.
+File processing complete.
+Moving transaction file to archive as 'transz3.xml'.........
+done.
+
+
+-------------------------------------------------------
+Time: 27/03/2014 12:04:59
+File "clock.txt". Start processing...
+
+No records found.
+
+
+
+Moving clock file to archive as 'clock.2014-03-27_1.txt'....
+done.
+

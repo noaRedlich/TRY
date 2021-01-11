@@ -1,0 +1,54 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 19/03/2014 10:33:40
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 19/03/2014 10:56:22
+File "tran8500015.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #85 already exists in database.(2132) Checking transactions...
+Found transaction #8500015.
+Transaction #8500015 added. Processing components...
+Product 7180000000062 already exists in stock.
+Stock has been updated for product 7180000000062.
+Product 3800000901 already exists in stock.
+Stock has been updated for product 3800000901.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 2569000000049 already exists in stock.
+Stock has been updated for product 2569000000049.
+Product 2570000000174 already exists in stock.
+Stock has been updated for product 2570000000174.
+Product 2747000000036 already exists in stock.
+Stock has been updated for product 2747000000036.
+Product 2747000000028 already exists in stock.
+Stock has been updated for product 2747000000028.
+Product 3700000003 already exists in stock.
+Stock has been updated for product 3700000003.
+Product 3800000904 already exists in stock.
+Stock has been updated for product 3800000904.
+Processing payments...
+Cash payment found for 1000.00 NIS.
+Cheque payment found for 550.00 NIS.
+Found payments for total 1550 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran8500015.xml'.....
+done.
+

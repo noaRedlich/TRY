@@ -1,0 +1,49 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 02/02/2014 16:33:57
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 02/02/2014 16:39:34
+File "tran400014.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #4 already exists in database.(1944) Checking transactions...
+Found transaction #400014.
+Transaction #400014 added. Processing components...
+Product 2570000000002 already exists in stock.
+Stock has been updated for product 2570000000002.
+Warning:  Division by zero in /home/mlaitech/mlaitech.info/modules/stock/xmltrans.php on line 980
+
+Product 2570000000001 already exists in stock.
+Stock has been updated for product 2570000000001.
+Product 2570000000051 already exists in stock.
+Stock has been updated for product 2570000000051.
+Product 8120000000302 already exists in stock.
+Stock has been updated for product 8120000000302.
+Product 2747000000012 already exists in stock.
+Stock has been updated for product 2747000000012.
+Processing payments...
+Credit card payment found for 843.65 NIS.
+Found payments for total 843.65 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran400014.xml'......
+done.
+

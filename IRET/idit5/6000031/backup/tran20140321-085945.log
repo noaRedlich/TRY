@@ -1,0 +1,54 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 21/03/2014 08:48:26
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 21/03/2014 08:59:45
+File "tran8900007.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #89 already exists in database.(2141) Checking transactions...
+Found transaction #8900007.
+Transaction #8900007 added. Processing components...
+Product 5400000199 already exists in stock.
+Stock has been updated for product 5400000199.
+Product 2570000000174 already exists in stock.
+Stock has been updated for product 2570000000174.
+Product 2830000000057 already exists in stock.
+Stock has been updated for product 2830000000057.
+Product 4000000015 already exists in stock.
+Stock has been updated for product 4000000015.
+Product 9290000000048 already exists in stock.
+Stock has been updated for product 9290000000048.
+Product 5400000262 already exists in stock.
+Stock has been updated for product 5400000262.
+Product 3700000006 already exists in stock.
+Stock has been updated for product 3700000006.
+Processing payments...
+Credit card payment found for 873.05 NIS.
+Found payments for total 873.05 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran8900007.xml'.....
+done.
+

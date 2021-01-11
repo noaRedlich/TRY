@@ -1,0 +1,55 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 19/02/2014 09:04:39
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 19/02/2014 09:26:45
+File "tran3800003.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #38 already exists in database.(2024) Checking transactions...
+Found transaction #3800003.
+Transaction #3800003 added. Processing components...
+Product 3700000006 already exists in stock.
+Stock has been updated for product 3700000006.
+Product 2748000000036 already exists in stock.
+Stock has been updated for product 2748000000036.
+Product 2747000000028 already exists in stock.
+Stock has been updated for product 2747000000028.
+Product 2747000000019 already exists in stock.
+Stock has been updated for product 2747000000019.
+Product 2570000000123 already exists in stock.
+Stock has been updated for product 2570000000123.
+Product 42000000965 already exists in stock.
+Stock has been updated for product 42000000965.
+Processing payments...
+Cheque payment found for 356.80 NIS.
+Cheque payment found for 330.00 NIS.
+Cheque payment found for 330.00 NIS.
+Cheque payment found for 330.00 NIS.
+Found payments for total 1346.8 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran3800003.xml'.....
+done.
+

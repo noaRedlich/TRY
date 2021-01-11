@@ -1,0 +1,37 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 24/03/2014 13:18:46
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 24/03/2014 13:25:02
+File "clock.txt". Start processing...
+
+4 lines found. Parsing...........done.
+4 records parsed
+Registered record for worker #7: 2014-03-24 09:12 - 15:23.
+--WARNING--: No exit record found for worker #4, exit time: 2014-03-24 14:32
+--WARNING--: No exit record found for worker #9, exit time: 2014-03-24 14:54
+Moving clock file to archive as 'clock.2014-03-24_1.txt'....
+done.
+

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /banner/
+Disallow: /hidden/
+Disallow: /img/
+Disallow: /lang/
+Disallow: /logo/
+Disallow: /offer/

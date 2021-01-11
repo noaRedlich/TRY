@@ -1,0 +1,74 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 13/03/2014 08:00:05
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 13/03/2014 08:03:18
+File "tran7400001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Creating package #74........................................done.(2111)
+Processing transactions:
+Found transaction #7400001.
+Transaction #7400001 added. Processing components...
+Product 3800000895 already exists in stock.
+Stock has been updated for product 3800000895.
+Processing payments...
+Credit card payment found for 189.00 NIS.
+Found payments for total 189 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran7400001.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 13/03/2014 08:03:18
+File "tran7300009.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #73 already exists in database.(2108) Checking transactions...
+Found transaction #7300009.
+Transaction #7300009 added. Processing components...
+Product 16070652 already exists in stock.
+Stock has been updated for product 16070652.
+Processing payments...
+Cash payment found for 32.00 NIS.
+Found payments for total 32 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran7300009.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 13/03/2014 08:03:18
+File "tran7300010.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #73 already exists in database.(2108) Checking transactions...
+Found transaction #7300010.
+Transaction #7300010 added. Processing components...
+Product 3400000016 already exists in stock.
+Stock has been updated for product 3400000016.
+Processing payments...
+Cash payment found for 25.00 NIS.
+Found payments for total 25 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran7300010.xml'.....
+done.
+

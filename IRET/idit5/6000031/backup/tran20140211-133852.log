@@ -1,0 +1,31 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 11/02/2014 13:32:34
+Checking for terminal updates...
+File "pluadd" was updated successfully
+No update needed for file "deps"
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 11/02/2014 13:38:54
+File "tran400001.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+

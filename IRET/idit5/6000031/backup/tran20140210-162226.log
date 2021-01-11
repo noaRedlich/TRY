@@ -1,0 +1,59 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 10/02/2014 15:56:15
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.update"
+No update needed for file "club.update"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 10/02/2014 16:22:26
+File "tran2100009.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #21 already exists in database.(1983) Checking transactions...
+Found transaction #2100009.
+Transaction #2100009 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Product 5400000214 already exists in stock.
+Stock has been updated for product 5400000214.
+Product 3800000264 already exists in stock.
+Stock has been updated for product 3800000264.
+Product 9290000000048 already exists in stock.
+Stock has been updated for product 9290000000048.
+Processing payments...
+RefundVoucher payment found for 177.00 NIS.
+Found payments for total 177 NIS.
+--WARNING--: Too big difference between payment amount and transaction amount. (Charge: 272.65, Payment: 177, Change: :0.00) 
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran2100009.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 10/02/2014 16:22:27
+File "tran400001.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+

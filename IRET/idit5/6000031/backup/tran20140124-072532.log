@@ -1,0 +1,147 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+No terminal backup directory found. Trying to create...........Done.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 23/01/2014 11:55:32
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran300004.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #3 already exists in database.(1890) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #300004.
+Transaction #300004 added. Processing components...
+Product 2683000000017 already exists in stock.
+Stock has been updated for product 2683000000017.
+Processing payments...
+Cash payment found for -279.00 NIS.
+--ERROR--: Refund/regular modes are mixed within transaction.
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran300004.xml'......
+done.
+
+-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran600001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Creating package #6.........................................done.(1900)
+Processing transactions:
+Found transaction #600001.
+Transaction #600001 added. Processing components...
+Product 2683000000017 already exists in stock.
+Stock has been updated for product 2683000000017.
+Processing payments...
+Cash payment found for -279.00 NIS.
+--ERROR--: Refund/regular modes are mixed within transaction.
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran600001.xml'......
+done.
+
+-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran600002.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #6 already exists in database.(1900) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #600002.
+Transaction #600002 added. Processing components...
+Product 2829000000016 already exists in stock.
+Stock has been updated for product 2829000000016.
+Processing payments...
+Cheque payment found for -279.00 NIS.
+--ERROR--: Refund/regular modes are mixed within transaction.
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran600002.xml'......
+done.
+
+-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran600003.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #6 already exists in database.(1900) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #600003.
+Transaction #600003 added. Processing components...
+Product 2829000000017 already exists in stock.
+Stock has been updated for product 2829000000017.
+Processing payments...
+Hakafa payment found for -249.00 NIS.
+--ERROR--: Refund/regular modes are mixed within transaction.
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran600003.xml'......
+done.
+
+-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran100001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #1 already exists in database.(1888) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #100001.
+--WARNING--: Transaction #100001 already exists in database with different date.
+Processing of duplicate packages is FORBIDDEN.
+Transaction skipped.
+File processing complete.
+Moving transaction file to archive as 'tran100001.xml'......
+done.
+
+-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran600004.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #6 already exists in database.(1900) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #600004.
+Transaction #600004 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Credit card payment found for 10.00 NIS.
+Found payments for total 10 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran600004.xml'......
+done.
+
+-------------------------------------------------------
+Time: 24/01/2014 07:25:35
+File "tran600005.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #6 already exists in database.(1900) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #600005.
+Transaction #600005 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Credit card payment found for -10.00 NIS.
+--ERROR--: Refund/regular modes are mixed within transaction.
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran600005.xml'......
+done.
+

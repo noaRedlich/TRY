@@ -1,0 +1,49 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 25/03/2014 09:26:05
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 25/03/2014 09:43:17
+File "tran9400002.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #94 already exists in database.(2151) Checking transactions...
+Found transaction #9400002.
+Transaction #9400002 added. Processing components...
+Product 2571000000048 already exists in stock.
+Stock has been updated for product 2571000000048.
+Product 3800000907 already exists in stock.
+Stock has been updated for product 3800000907.
+Product 2570000000184 already exists in stock.
+Stock has been updated for product 2570000000184.
+Product 3800000749 already exists in stock.
+Stock has been updated for product 3800000749.
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 2571000000050 already exists in stock.
+Stock has been updated for product 2571000000050.
+Product 3700000006 already exists in stock.
+Stock has been updated for product 3700000006.
+Processing payments...
+Hakafa payment found for 1615.00 NIS.
+Found payments for total 1615 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran9400002.xml'.....
+done.
+

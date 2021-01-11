@@ -1,0 +1,41 @@
+
+Base terminal: 6000040
+Scanning for terminal #6000040
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 25/03/2014 17:08:04
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 25/03/2014 17:10:37
+File "tran100006.xml". Start processing...
+
+Terminal 6000040 found in user database and is active.
+Package #1 already exists in database.(2155) Checking transactions...
+Found transaction #100006.
+Transaction #100006 added. Processing components...
+Product 0000 already exists in stock.
+Stock has been updated for product 0000.
+Processing payments...
+Cash payment found for 100.00 NIS.
+PrePaid deposit found for 100 NIS
+Found payments for total 0 NIS.
+Warning:  file_get_contents(https://mlaitech.info/modules/precard/api.php?Com=Charge&amp;TerminalID=6000040&amp;CardID=6661241077786699&amp;Pay=-100.00&amp;Charge=-100.00) [function.file-get-contents]: failed to open stream: No such file or directory in /home/mlaitech/mlaitech.info/modules/stock/xmltrans.php on line 1627
+
+Prepaid card charge reported to API: 
+File processing complete.
+Moving transaction file to archive as 'tran100006.xml'......
+done.
+

@@ -1,0 +1,55 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 10/02/2014 16:22:26
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.update"
+No update needed for file "club.update"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 10/02/2014 18:16:35
+File "tran2100010.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #21 already exists in database.(1983) Checking transactions...
+Found transaction #2100010.
+Transaction #2100010 added. Processing components...
+Product 2600139 already exists in stock.
+Stock has been updated for product 2600139.
+Product 790000000710 already exists in stock.
+Stock has been updated for product 790000000710.
+Product 16070653 already exists in stock.
+Stock has been updated for product 16070653.
+Processing payments...
+Credit card payment found for 491.00 NIS.
+Found payments for total 491 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2100010.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 10/02/2014 18:16:35
+File "tran400001.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+

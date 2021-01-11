@@ -1,0 +1,47 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 20/02/2014 11:26:54
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 20/02/2014 11:42:53
+File "tran4000007.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #40 already exists in database.(2029) Checking transactions...
+Found transaction #4000007.
+Transaction #4000007 added. Processing components...
+Product 2570000000123 already exists in stock.
+Stock has been updated for product 2570000000123.
+Product 7180000000134 already exists in stock.
+Stock has been updated for product 7180000000134.
+Product 3800000880 already exists in stock.
+Stock has been updated for product 3800000880.
+Processing payments...
+Cash payment found for -0.05975.15 NIS.
+--WARNING--: Too big difference between payment amount and transaction amount. (Charge: 490.05, Payment: -0.05975, Change: :485.05) 
+Transaction cancelled.
+File processing complete.
+Moving transaction file to archive as 'tran4000007.xml'.....
+done.
+

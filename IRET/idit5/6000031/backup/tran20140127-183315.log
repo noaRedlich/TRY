@@ -1,0 +1,51 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 27/01/2014 18:24:17
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.-------------------------------------------------------
+Time: 27/01/2014 18:33:15
+File "tran800022.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #8 already exists in database.(1910) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #800022.
+Transaction #800022 added. Processing components...
+Product 60013 already exists in stock.
+Stock has been updated for product 60013.
+Product 2683000000016 already exists in stock.
+Stock has been updated for product 2683000000016.
+Product 9300000000066 already exists in stock.
+Stock has been updated for product 9300000000066.
+Product 790000000756 already exists in stock.
+Stock has been updated for product 790000000756.
+Product 42000001337 already exists in stock.
+Stock has been updated for product 42000001337.
+Product 2600114 already exists in stock.
+Stock has been updated for product 2600114.
+Product 3800000602 already exists in stock.
+Stock has been updated for product 3800000602.
+Processing payments...
+Cash payment found for -1203.00 NIS.
+Found refund for total 1203 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran800022.xml'......
+done.
+

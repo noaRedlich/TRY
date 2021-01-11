@@ -1,0 +1,32 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 26/03/2014 13:11:22
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 26/03/2014 13:54:40
+File "clock.txt". Start processing...
+
+3 lines found. Parsing...........done.
+3 records parsed
+Merged record for worker #9: 2014-03-24 14:54:00 - 2014-03-26 08:59.
+--WARNING--: No enter record found for worker #9, exit time: 2014-03-26 14:49
+--WARNING--: No exit record found for worker #4, exit time: 2014-03-26 14:46
+Moving clock file to archive as 'clock.2014-03-26.txt'......
+done.
+

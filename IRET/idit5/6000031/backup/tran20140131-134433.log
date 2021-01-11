@@ -1,0 +1,59 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 31/01/2014 13:21:32
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.-------------------------------------------------------
+Time: 31/01/2014 13:44:33
+File "tran200030.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #2 already exists in database.(1939) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #200030.
+Transaction #200030 added. Processing components...
+Product 2570000000031 already exists in stock.
+Stock has been updated for product 2570000000031.
+Product 2570000000144 already exists in stock.
+Stock has been updated for product 2570000000144.
+Product 5400000553 already exists in stock.
+Stock has been updated for product 5400000553.
+Product 5400000446 already exists in stock.
+Stock has been updated for product 5400000446.
+Product 3800000580 already exists in stock.
+Stock has been updated for product 3800000580.
+Product 3800000776 already exists in stock.
+Stock has been updated for product 3800000776.
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Product 5400000621 already exists in stock.
+Stock has been updated for product 5400000621.
+Product 4000000070 already exists in stock.
+Stock has been updated for product 4000000070.
+Product 2787000000003 already exists in stock.
+Stock has been updated for product 2787000000003.
+Processing payments...
+Cheque payment found for 301.00 NIS.
+Cheque payment found for 331.00 NIS.
+Cheque payment found for 301.00 NIS.
+Found payments for total 933 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran200030.xml'......
+done.
+

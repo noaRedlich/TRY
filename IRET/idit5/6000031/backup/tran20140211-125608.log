@@ -1,0 +1,182 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 11/02/2014 07:15:48
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+File "deps.add" was updated successfully
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 11/02/2014 12:56:08
+File "tran2200001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Creating package #22........................................done.(1986)
+Processing transactions:
+Found transaction #2200001.
+Transaction #2200001 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 1.00 NIS.
+Found payments for total 1 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2200001.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 11/02/2014 12:56:09
+File "tran2200002.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #22 already exists in database.(1986) Checking transactions...
+Found transaction #2200002.
+Transaction #2200002 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for -1.00 NIS.
+Found refund for total 1 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2200002.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 11/02/2014 12:56:09
+File "tran2200003.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #22 already exists in database.(1986) Checking transactions...
+Found transaction #2200003.
+Transaction #2200003 added. Processing components...
+Product 2570000000110 already exists in stock.
+Stock has been updated for product 2570000000110.
+Processing payments...
+Cash payment found for 100.00 NIS.
+Credit card payment found for 50.00 NIS.
+Credit card payment found for 148.00 NIS.
+Found payments for total 298 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2200003.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 11/02/2014 12:56:10
+File "tran2200004.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #22 already exists in database.(1986) Checking transactions...
+Found transaction #2200004.
+Transaction #2200004 added. Processing components...
+Product 790000000787 already exists in stock.
+Stock has been updated for product 790000000787.
+Product 2570000000149 already exists in stock.
+Stock has been updated for product 2570000000149.
+Product 2570000000123 already exists in stock.
+Stock has been updated for product 2570000000123.
+Product 2570000000086 already exists in stock.
+Stock has been updated for product 2570000000086.
+Product 3800000866 already exists in stock.
+Stock has been updated for product 3800000866.
+Product 1425000000047 already exists in stock.
+Stock has been updated for product 1425000000047.
+Product 90000000178 already exists in stock.
+Stock has been updated for product 90000000178.
+Product 90000000260 already exists in stock.
+Stock has been updated for product 90000000260.
+Processing payments...
+Cash payment found for 1.10 NIS.
+Cheque payment found for 464.00 NIS.
+Cheque payment found for 464.00 NIS.
+Cheque payment found for 464.00 NIS.
+Found payments for total 1393.1 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2200004.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 11/02/2014 12:56:11
+File "tran2200005.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #22 already exists in database.(1986) Checking transactions...
+Found transaction #2200005.
+Transaction #2200005 added. Processing components...
+Product 1425000000047 already exists in stock.
+Stock has been updated for product 1425000000047.
+Product 2747000000028 already exists in stock.
+Stock has been updated for product 2747000000028.
+Product 3X3800000887 has been added to stock.
+Stock has been updated for product 3X3800000887.
+Product 2X3800000887 has been added to stock.
+Stock has been updated for product 2X3800000887.
+Product 3800000887 already exists in stock.
+Stock has been updated for product 3800000887.
+Product 3800000889 already exists in stock.
+Stock has been updated for product 3800000889.
+Processing payments...
+Hakafa payment found for 834.65 NIS.
+Found payments for total 834.65 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2200005.xml'.....
+done.
+
+
+-------------------------------------------------------
+Time: 11/02/2014 12:56:11
+File "tran400001.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 11/02/2014 12:56:11
+File "tran2200006.xml". Start processing...
+
+Terminal ID in file - 6000031, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+Terminal 6000031 found in user database and is active.
+Package #22 already exists in database.(1986) Checking transactions...
+Found transaction #2200006.
+Transaction #2200006 added. Processing components...
+Product 790000000554 already exists in stock.
+Stock has been updated for product 790000000554.
+Processing payments...
+RefundVoucher payment found for -141.75 NIS.
+Found refund for total 141.75 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran2200006.xml'.....
+done.
+

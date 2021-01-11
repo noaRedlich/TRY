@@ -1,0 +1,132 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 09/02/2014 14:59:11
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+No update needed for file "deps.update"
+No update needed for file "club.update"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran300014.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran300012.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran300013.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran300015.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran300016.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran390001.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran400001.xml". Start processing...
+
+Terminal ID in file - 1234, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #1234
+
+ERROR: Terminal was not found in database or is inactive.
+File processing cancelled.
+
+
+
+-------------------------------------------------------
+Time: 09/02/2014 15:32:55
+File "tran1800005.xml". Start processing...
+
+Terminal ID in file - 6000031, doesn't match current terminal ID - -1. Switching to new terminal...
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+Terminal 6000031 found in user database and is active.
+Package #18 already exists in database.(1976) Checking transactions...
+Found transaction #1800005.
+Transaction #1800005 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for -250.00 NIS.
+Found refund for total 250 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran1800005.xml'.....
+done.
+

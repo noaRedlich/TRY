@@ -1,0 +1,5 @@
+SCC = This is a source code control file
+
+[ttf2pt1.exe]
+SCC_Aux_Path = gleb-server:80:C:\Program Files\Microsoft Visual Studio\Common\VSS\srcsafe.ini
+SCC_Project_Name = $/VCX/fonts

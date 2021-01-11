@@ -1,0 +1,89 @@
+BODY {
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+        background-color: #FFFFFF;
+}
+
+A,
+ {
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+        color: blue;
+
+}
+
+b {
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+}
+
+font {
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+}
+
+A:Hover {
+        color: red;
+		font-size: 12px;
+}
+
+HR {
+        color: blue;
+        height: 1px;
+}
+
+INPUT,SELECT {
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+        font-weight: normal;
+
+
+}
+
+
+
+TEXTAREA {
+        color: black;
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+        font-weight:normal;
+        width: 100%;
+}
+
+.menu,a.menu {
+	font-family: Arial, Tahoma, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	
+}
+a:hover.menu {
+	font-family: Arial, Tahoma, Helvetica, Sans-Serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: yellow;
+	text-decoration: none;
+	
+}
+
+LI {
+        color: black;
+        font-family: arial,verdana,tahoma,helvetica;
+        font-size: 12px;
+
+}
+
+PRE {
+        font-size: 12px;
+        font-weight: medium;
+        background-color: #f3f3f3;
+        color: black;
+}
+TD {
+        COLOR: #000000; FONT-FAMILY: arial, helvetica, sans-serif; FONT-SIZE: 12px; TEXT-DECORATION: none }
+
+
+DIV {
+        COLOR: #000000; FONT-FAMILY: arial, tahoma, helvetica, sans-serif; FONT-SIZE: 12px; TEXT-DECORATION: none }
+

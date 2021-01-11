@@ -1,0 +1,65 @@
+<?
+
+//####################################################
+// CATCOL.PHP
+// This file is responsible to displaying catagories
+// and sub-dirs.
+//####################################################
+
+if ($catname)
+{
+ 	 print("<h2>$catname</h2>");
+}
+
+if ($kid==0) { $where_clause = "where catfatherid = 0"; }
+else { $where_clause = "where catfatherid=$kid";  }
+				
+print("<table border='0' width='100%'><tr><td valign=top>");
+function column()
+{
+ 				global $cat_tbl;
+				global $where_clause;
+				global $categories_per_column;
+				global $file;
+				global $ccatid;
+				global $cantall;
+
+				$sql = "select * from $cat_tbl $where_clause order by catname";
+				$result = mysql_query ("$sql");
+				$catcounter =  mysql_num_rows($result);
+
+				for ($i=0; $i<$catcounter; $i++)
+	 			{   
+   	       $row = mysql_fetch_array($result);
+           $catid = $row["catid"];
+           $catfatherid = $row["catfatherid"];
+           $catname = $row["catname"];
+           $catdescription = $row["catdescription"];
+           $total = $row["total"];
+           $catimage = $row["catimage"];
+					 $catno = $catno + 1;
+				 
+					//print("<font class='text'><img src=\"catimages/$catimage\">&nbsp;<a href='?kid=$catid&catname=$catname'><b>$catname</b></a><small><font color=\"#999999\"> $total</font></small><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face='Verdana' size='1'>$catdescription</font><p>\n");
+					$filename = "templates/cat.html";
+					$fd = fopen ($filename, "r");
+					$file= fread ($fd, filesize ($filename));
+					$file = str_replace("{IMAGE}", "<img src=\"catimages/$catimage\">", $file);
+					$file = str_replace("{CATEGORYNAME}", "$catname", $file);
+					$file = str_replace("{TOTAL_ADS}", "$total", $file);
+					$file = str_replace("{URL}", "<a href='?kid=$catid&catname=$catname'>", $file);
+   				$file = str_replace("{/URL}", "</a>", $file);
+					$file = str_replace("{CATDESCRIPTION}", "$catdescription", $file);
+					print($file);
+					
+					if ($catno == $categories_per_column)
+					{
+								print("</td><td valign=top>");
+					}		
+	
+	 	 		}		
+				print("</td></tr></table>");
+
+}									
+column(); 
+
+?>

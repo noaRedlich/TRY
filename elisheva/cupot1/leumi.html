@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="he" >
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet" media="screen">
+   
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
+  <body class="leumi">
+  	
+	<div class="wrap display"></div>
+	<!--<div class="popup pop_peulot popup_pay mezuman">
+		<img src="images/box_large.png" class="img_wrap"/>		
+		<div class="container_pop mezuman">
+			<h2 class="relative">תשלום במזומן</h2>
+			<h5>הוסף סכום מזומן:</h5>
+			<input type="text" value="20"/>
+			<div class="shtar">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+			</div>
+			<div class="matbea">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+				<img src="images/logoex.png">
+			</div>
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול">
+			<input class="mybtn btnblue leftbottom" type="button" value="אישור">
+
+		</div>
+	</div>
+	<div class="popup pop_peulot popup_pay type_pay">
+		<img src="images/box_large.png" class="img_wrap"/>		
+		
+	</div>-->
+	<div class="popup pop_peulot popup_pay add_worker">
+		<img src="images/box_large.png" class="img_wrap"/>		
+		<div class="container_pop add_worker">
+			<h2 class="relative">סה"כ לתשלום: <span style="font-size: 137%">₪</span><span>710.23</span></h2>
+			<h5>:הוסף עובד למכירה</h5>
+			<table class="workers_tb">
+				<tr>
+					 <th>שם עובד</th>
+					 <th>טלפון</th>
+					 <th>נייד</th>
+					 <th>כתובת</th>
+					 <th>מס"ד</th>
+					 <th></th>
+				</tr>								
+				<tr>
+					<td>יהב כהן</td>
+					<td>052-4443333</td>
+					<td>052-44434233</td>
+					<td>יהודה הנשיא</td>
+					<td>₪3,600.90</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+				<tr>
+					<td>יהב כהן</td>
+					<td>052-4443333</td>
+					<td>052-44434233</td>
+					<td>יהודה הנשיא</td>
+					<td>₪3,600.90</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+				<tr>
+					<td>יהב כהן</td>
+					<td>052-4443333</td>
+					<td>052-44434233</td>
+					<td>יהודה הנשיא</td>
+					<td>₪3,600.90</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+				<tr>
+					<td>יהב כהן</td>
+					<td>052-4443333</td>
+					<td>052-44434233</td>
+					<td>יהודה הנשיא</td>
+					<td>3,600.90₪</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+				<tr>
+					<td>יהב כהן</td>
+					<td>052-4443333</td>
+					<td>052-44434233</td>
+					<td>יהודה הנשיא</td>
+					<td>3,600.90₪</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+			</table>
+			<input class="mybtn btngray rightbottom" type="button" value="ביטול" onclick="$( '.wrap' ).click();">
+			<input class="mybtn btnblue leftbottom" onclick="openwrap2('.add_worker.container_pop','.type_pay.container_pop')" type="button" value="בחירה">
+		</div>
+		<div class="container_pop type_pay display">
+			<h2 class="relative">סה"כ לתשלום: <span style="font-size: 137%">₪</span><span>710.23</span></h2>
+			<h5>בחר אמצעי תשלום:</h5>
+			<div class="type_half right">
+				<div class="type_b">
+					<input class="mybtn btnorange " type="button" value="מזומן" onclick="openwrap2('.type_pay.container_pop','.mezuman.container_pop')">
+					<input class="mybtn btnblue " type="button" value="המחאה" onclick="openwrap2('','.amchaa.container_pop')">
+					<input class="mybtn btngreen " type="button" value="אשראי" onclick="openwrap2('','.ashray.container_pop')">
+				</div>
+				<div class="type_s right type_b">
+					<input class="mybtn btngray " type="button" value="שובר"  onclick="openwrap2('','.shovar.container_pop')">
+					<input class="mybtn btngray " type="button" value="פריפייד" onclick="openwrap2('','.prifeyd.container_pop')">
+					<input class="mybtn btngray " type="button" value="אחר">
+				</div>
+				<div class="type_s left type_b">
+					<input class="mybtn btngray " type="button" value="הקפה"  onclick="openwrap2('','.akafa.container_pop')">
+					<input class="mybtn btngray " type="button" value="סילאריקס">
+					<input class="mybtn btngray " type="button" value="אחר">
+				</div>
+			</div>
+			<input class="mybtn btnlightgray rightbottom" type="button" value="יציאה" onclick="openwrap2('.mezuman.container_pop','.add_worker.container_pop')">
+			<div class="type_half left">
+				<table class="workers_tb">
+					<tr>
+						 <th>סוג תשלום</th>
+						 <th>סכום</th>
+						 <th></th>
+					</tr>								
+					<tr>
+						<td>מזומן</td>
+						<td>20</td>
+						<td><i class="fa fa-times-circle"></i></td>
+					<tr>
+					<tr>
+						<td>אשראי</td>
+						<td>20</td>
+						<td><i class="fa fa-times-circle"></i></td>
+					<tr>
+				</table>
+			</div>
+			<div class="leftbottom">
+				<p class="pay_p"><span class="right">שולם:</span><span class="left" style="width: 25px;font-size: 105%;"> ₪ </span><span class="left">389.60</span></p>
+				<p class="itra_p"><span class="right">יתרה לתשלום:</span><span class="left" style="width: 25px;font-size: 105%;"> ₪ </span><span class="left">389.60</span></p>
+			</div>
+		</div>
+		<div class="container_pop mezuman display">
+			<h2 class="relative">תשלום במזומן</h2>
+			<h5>הוסף סכום מזומן:</h5>
+			<input type="text" value="20"/>
+			<div class="shtar">
+				<img src="images/money8.png">
+				<img src="images/money2.png">
+				<img src="images/money7.png">
+				<img src="images/money1.png">
+			</div>
+			<div class="matbea">
+				<img src="images/money4.png">
+				<img src="images/money9.png">
+				<img src="images/money10.png">
+				<img src="images/money5.png">
+				<img src="images/money6.png">
+				<img src="images/money3.png">
+			</div>
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			<input class="mybtn btnblue leftbottom" type="button" value="אישור" onclick="openwrap2(''.'')">
+		</div>
+		<div class="container_pop amchaa display">
+			<h2 class="relative">תשלום בהמחאה</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר המחאה:</p>
+					<p>תאריך:</p>
+					<p>מספר בנק:</p>
+					<p>מספר סניף:</p>
+					<p>מספר חשבון:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+				<input class="mybtn btngreen " type="button" value="בדיקת המחאה" onclick="openwrap2('','')">
+				<input class="mybtn btnorange " type="button" value="מחולל התשלומים" onclick="openwrap2('','.mecholel.container_pop')">
+				<input class="mybtn btnblue " type="button" value="אישור" onclick="openwrap2(''.'')">
+			</div>
+		</div>
+		<div class="container_pop ashray display">
+			<h2 class="relative">תשלום באשראי</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />					
+			</form>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס אשראי</p>
+			<input class="mybtn btnorange " type="button" value="הקלדה ידנית" style="width: 64%;"onclick="openwrap2('','.ashray_yadany.container_pop')"> 
+			<div class="rightbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			</div>
+		</div>
+		<div class="container_pop ashray_yadany display">
+			<h2 class="relative">תשלום באשראי - ידני</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר כרטיס:</p>
+					<p>תוקף כרטיס:</p>
+					<p>תשלומים:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="אופציות אשראי" onclick="openwrap2('','.option_ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="מחולל התשלומים" onclick="openwrap2('','.mecholel.container_pop')">
+				<input class="mybtn btnblue " type="button" value="אישור" onclick="openwrap2(''.'')">
+			</div>
+		</div>
+		<div class="container_pop mecholel display">
+			<h2 class="relative">מחולל תשלומים</h2>
+			<form class="amchaa_frm" style="width: 80%;">
+				<div style="width:48%;margin-right: 2%;float:right">
+					<p style="margin-top: 10px;">סכום סה"כ:</p>
+					<p>סכום תשלום ראשון:</p>
+					<p>תאריך פרעון שיק ראשון:</p>
+					<p>מס' שיק  \ שובר ראשון:</p>
+					<p>מס' בנק:</p>
+					<p>מספר סניף:</p>
+					<p>מספר חשבון:</p>
+				</div>
+				<div style="width:50%;float:left">
+					<input  class="text" style="margin-top: 10px;"/>
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="אופציות אשראי" style="visibility: hidden">
+				<input class="mybtn btngreen " type="button" value="בדיקת המחאה" onclick="openwrap2('','.mecholel.container_pop')">
+				<input class="mybtn btnorange " type="button" value="חולל" onclick="openwrap2(''.'')">
+			</div>
+		</div>
+		<div class="container_pop option_ashray display">
+			<h2 class="relative">אופציות אשראי</h2>
+			<h5>הוסף פרטים:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />
+				<div style="width:38%;margin-right: 2%;float:right">
+					<p>תעודת זהות:</p>
+					<p style="line-height: 19px;">3 ספרות אחרונות בגב הכרטיס:</p>
+					<p>סוג מטבע:</p>
+					<p>מספר אישור:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+					<input  class="text" />
+				</div>	
+			</form>
+			
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.ashray_yadany.container_pop')">
+			<input class="mybtn btnblue leftbottom" type="button" value="אישור" onclick="openwrap2(''.'')">
+		</div>
+		<div class="container_pop shovar display">
+			<h2 class="relative">תשלום שובר</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />
+				<div style="width:30%;margin-right: 2%;float:right">
+					<p>מספר שובר:</p>
+				</div>
+				<div style="width:60%;float:left">
+					<input  class="text" />
+				</div>	
+			</form>
+			
+			<div class="allbottom">
+				<input class="mybtn btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+				<input class="mybtn btnorange " type="button" value="אופציות אשראי" onclick="openwrap2('','.option_ashray.container_pop')">
+				<input class="mybtn btnorange " type="button" value="מחולל התשלומים" onclick="openwrap2('','.mecholel.container_pop')">
+				<input class="mybtn btnblue " type="button" value="אישור" onclick="openwrap2(''.'')">
+			</div>
+		</div>
+		<div class="container_pop akafa display">
+			<h2 class="relative">תשלום בהקפה</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />					
+			</form>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס לקוח</p>
+			<input class="mybtn btnorange " type="button" value="חיפוש לקוח" style="width: 64%;"onclick="openwrap2('','.cust_search.container_pop')"> 
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			<input class="mybtn btnblue leftbottom" onclick="openwrap2('.add_worker.container_pop','.akafa3.container_pop')" type="button" value="אישור">
+		</div>
+		<div class="container_pop cust_search display">
+			<h2 class="relative">תשלום בהקפה</h2>
+			<h5>הקלד שם לקוח:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="יהב" class="text" />					
+			</form>
+			<table class="workers_tb">
+				<tr>
+					 <th>שם לקוח</th>
+					 <th>מספר עיסקה</th>
+					 <th>תאריך</th>
+					 <th>שעה</th>
+					 <th>סכום</th>
+					 <th></th>
+				</tr>								
+				<tr>
+					<td>יהב כהן</td>
+					<td>42356436</td>
+					<td>16.04.14</td>
+					<td>21:30</td>
+					<td>₪3,600.90</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+					<tr>
+					<td>יהב כהן</td>
+					<td>42356436</td>
+					<td>16.04.14</td>
+					<td>21:30</td>
+					<td>₪3,600.90</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+					<tr>
+					<td>יהב כהן</td>
+					<td>42356436</td>
+					<td>16.04.14</td>
+					<td>21:30</td>
+					<td>₪3,600.90</td>
+					<td><i class="fa fa-check-circle display"></i></td>
+				<tr>
+			</table>
+			<input class="mybtn btngray rightbottom" type="button" value="ביטול"  onclick="openwrap2('','.akafa.container_pop')">
+			<input class="mybtn btnblue leftbottom" onclick="openwrap2('.add_worker.container_pop','.akafa2.container_pop')" type="button" value="אישור">
+		</div>
+		<div class="container_pop akafa2 display">
+			<h2 class="relative">תשלום בהקפה</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />					
+			</form>
+			<p><span style="margin-left: 20px;">לקוח: יהב כהן</span><span>מספר: 159ן</span></p>
+			<p><span style="margin-left: 20px;color: #fa6f58;">יתרת חוב: 8560.60</span><span>יתרת חוב מותרת: 1000</span></p>
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.cust_search.container_pop')">
+			<input class="mybtn btnblue leftbottom" onclick="openwrap2('.add_worker.container_pop','.akafa3.container_pop')" type="button" value="לתשלום">
+		</div>
+		<div class="container_pop akafa3 display">
+			<h2 class="relative">תשלום בהקפה</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />					
+			</form>
+			<p style="font-size: 224%;width: 300px;margin: 0 auto;">סכום חורג מהמסגרת המותרת ללקוח.</p>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">תשלום לא בוצע.</p>
+			<input class="mybtn btnorange " type="button" value="אלץ עיסקה" style="width: 64%;"onclick="openwrap2('','.akafa.container_pop')"> 
+			<input class="mybtn rightbottom btnlightgray " type="button" value="ביטול" onclick="openwrap2('','.akafa.container_pop')">
+			<input class="mybtn btnblue leftbottom"  type="button" value="אישור" onclick="$( '.wrap' ).click();">
+		</div>
+		<div class="container_pop prifeyd display">
+			<h2 class="relative">תשלום פריפייד</h2>
+			<h5>הוסף סכום:</h5>
+			<form class="amchaa_frm" style="width: 64%;margin: 0 auto;">
+				<input type="text" value="20" class="text" />					
+			</form>
+			<p style="font-size: 224%;margin-top: 20px;margin-bottom: 10px;">העבר כרטיס פריפייד</p>
+			<input class="mybtn btnlightgray rightbottom" type="button" value="ביטול" onclick="openwrap2('','.type_pay.container_pop')">
+			<input class="mybtn btnblue leftbottom" onclick="openwrap2('.add_worker.container_pop','.akafa3.container_pop')" type="button" value="לתשלום">
+		</div>
+	</div>
+  <div class="header">
+  	<i class="fa fa-bars"></i>
+	<div class="inline" style="width:47.5%"></div>
+	<div class="inline relative" style="width:8%">
+		<i class="left fa fa-user"></i>
+		<i class="left fa fa-refresh"></i>
+	</div>		
+	<i class=" fa fa-clock-o"></i>
+	<div class="stat inline">
+		<label>שם הקופה</label>
+	</div>
+	<div class="stat inline btn">
+		<div class="openclose op">
+			<i class="fa fa-check"></i>
+			<span class=" stt open">פתוח</span>
+		</div>	
+		<div class="openclose cl display">
+			<i class="fa fa-times"></i>
+			<span class="stt close">סגור</span>
+		</div>	
+	</div>
+	
+	<i class=" fa fa-cog"></i>
+	<div class="logo_border">
+		<img src="images/logoex.png">		
+	</div>
+	
+  </div>
+  <div class="leftmenu display">
+  	<div class="leftmenu_inner">
+  		<i class=" fa fa-group"></i>
+  		<p>לקוחות</p>
+  	</div>
+  	<div class="leftmenu_inner">
+  		<i class="fa fa-file-text-o"></i>
+  		<p>דוחות</p>
+  	</div>
+  	<div class="leftmenu_inner">
+  		<i class=" fa fa-file-o"></i>
+  		<p>מסמכים</p>
+  	</div>
+  	<div class="leftmenu_inner">
+  		<i class="fa fa-envelope-o"></i>
+  		<p>מערכת דיוור</p>
+  	</div>
+  	<div class="leftmenu_inner">
+  		<i class=" fa fa-money"></i>
+  		<p>פרייפד</p>
+  	</div>
+  	<div class="leftmenu_inner">
+  		<i class="fa fa-check-square-o"></i>
+  		<p>בדיקת המחאות</p>
+  	</div>
+  	<div class="leftmenu_inner">
+  		<i class="fa fa-check-square-o"></i>
+  		<p>בדיקת אשראי</p>
+  	</div>
+  </div>
+  <div class="mainarea">
+  	<div class="right rightside">
+  		<form class="search_form relative">
+  			<input type="text" class="search_input" placeholder="חיפוש מוצר"/>
+			<i class="fa fa-search"></i>
+  			<div class="relative submit_wrap">
+  				<input type="submit"  value=""/>
+  				<i class="fa fa-tag"></i>				
+				<i class="fa fa-plus"></i>
+  			</div>
+  			
+  		</form>
+  		<div class="prod_area relative">
+  			<div class="prod_title">
+				<p>פרחים</p>
+				<i class="fa fa-list-ul"></i>
+			</div>
+  			<div class="prod_container">
+  				<div id="resizable" class="prod_row ui-widget-content"> 					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+   					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+  					
+  					<div class="prod first">
+  						<img src="images/sample.png"/>
+						<p>כאן יופיע שם המוצר</p>
+  					</div>
+    				</div>
+  			</div>
+  			<img src="images/arrow_o.png" class="arrow_o"/>
+  		</div>
+		
+  		<div class="calc_area">
+		<!--<div class="save_place"></div>-->
+  			<FORM NAME="Calc" style="width:100%">
+		<TABLE style="width:100%" border="0" cellpadding="0" cellspacing="0">
+		<TR>
+		<TD class="input_result">
+		<INPUT TYPE="text"   NAME="Input" style="width:98%;padding-right:2%;color:#42494f">
+		<br>
+		</TD>
+		</TR>
+		<TR>
+		<TD>
+		<table class="inner_calc" style="direction: ltr;" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				
+				<td><INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">  </td>
+				<td><INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">  </td>
+				<td><INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">  </td>
+				<td><INPUT TYPE="button" class="math" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '"></td>
+				<td><INPUT TYPE="button" class="math" NAME="clear"  OnClick="Calc.Input.value = ''" style="background:url('images/erase.png')no-repeat 51% 10px #e6e9ee!important"></td>				
+			</tr>
+			<tr>
+			
+		<td rowspan="1"><INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'"></td>
+		<td rowspan="1"><INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">  </td>
+		<td rowspan="1"><INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">  </td>
+		<td rowspan="1"><INPUT TYPE="button" class="math" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '"></td>
+		<td rowspan="3" style="position:relative"><div NAME="DoIt" class="result" OnClick="Calc.Input.value = eval(Calc.Input.value)"><i class="fa fa-check-circle"></i></div></td>
+			</tr>
+			<tr>
+		<td><INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'"></td>
+		<td><INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">  </td>
+		<td><INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">  </td>
+		<td><INPUT TYPE="button" class="math" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '"></td>
+			</tr>
+			<tr>
+		<td><INPUT TYPE="button" NAME="dot" VALUE="  .  " OnClick="Calc.Input.value += '.'"></td>
+		<td><INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">  </td>
+		<td><INPUT TYPE="button" NAME="zerozero"  VALUE="  00  " OnClick="Calc.Input.value += '00'"></td>
+		<!-- <td><INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)"></td> -->
+		<td><INPUT TYPE="button" class="math" NAME="div"   VALUE="  %  " OnClick="Calc.Input.value += ' % '"></td>
+			</tr>
+		</table>
+		</TD>
+		</TR>
+		</TABLE>
+		</FORM>
+  		</div>
+  	</div>
+  	<div class="left leftside">
+  		<form class="search_form relative">
+  			<input type="text" class="search_input" placeholder="חיפוש לקוחות"/>
+			<i class="fa fa-search"></i>
+  			<div class="relative submit_wrap">
+  				<input type="submit"  value=""/>
+  				<i class="fa fa-user"></i>
+				<i class="fa fa-plus"></i>
+  			</div>
+  		</form>
+  		<div class="details_area" style="width: 100%;">
+  			
+  			<table style="width: 100%;">
+  				<tr class="details_title">
+				    <th class="border_table"></th>
+				    <th style="width:20%">בר קוד</th> 
+				    <th>שם הפריט</th>
+				    <th>מחיר</th>
+				    <th>כמות</th>
+				    <th>הנחה</th>
+				    <th class="border_table">סה"כ</th>
+				    <th class="border_table"></th>
+				  </tr>
+				  <tr class="active">
+				    <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"><i class="fa fa-plus-circle"></i><p style="display: inline-block;width:60px;">2</p><i class="fa fa-minus-circle"></i></td> 
+				    <td></td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+				  <tr class="active">
+				    <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"><i class="fa fa-plus-circle"></i><p style="display: inline-block;width:60px;">2</p><i class="fa fa-minus-circle"></i></td> 
+				    <td>30%</td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+				  <tr class="active">
+				    <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"></td> 
+				    <td></td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+				  <tr class="active">
+				     <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"><i class="fa fa-plus-circle"></i><p style="display: inline-block;width:60px;">2</p><i class="fa fa-minus-circle"></i></td> 
+				    <td></td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+					<tr class="active">
+				    <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"><i class="fa fa-plus-circle"></i><p style="display: inline-block;width:60px;">2</p><i class="fa fa-minus-circle"></i></td> 
+				    <td></td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+				  <tr class="active">
+				    <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"><i class="fa fa-plus-circle"></i><p style="display: inline-block;width:60px;">2</p><i class="fa fa-minus-circle"></i></td> 
+				    <td></td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+				  <tr class="active">
+				  <td class="border_table text_center"><i class="fa fa-info-circle"></i></td>
+				    <td class="padding_5">1111111111</td> 
+				    <td>זר פרחים</td>
+				    <td>36.90</td>
+				    <td class="text_center"><i class="fa fa-plus-circle"></i><p style="display: inline-block;width:60px;">2</p><i class="fa fa-minus-circle"></i></td> 
+				    <td></td>
+				    <td class="border_table padding_5">36.90</td>
+				    <td class="border_table text_center"><i class="fa fa-times"></i></td> 
+				  </tr>
+  			</table>
+  		</div>
+  		<img src="images/zigzag.png" class="bordr_wave"/>
+		<div class="abso">
+  		<div class="sum_area">
+  			<div class="right inline">
+  				<div class="newrow1"><label class="block"><i class="fa fa-pencil"></i>הוסף הערה</label></div>
+  				<div class="newrow2"><label class="lbl1">שם: יהב כהן</label><span>|</span></span><label class="lbl2 border">מספר: 159</label>
+				<label class="lbl3">ביקור אחרון: 25.6.2014</label>
+				</div>
+  				<div class="newrow3"><label>יתרת חוב: </label><label >  ₪</label><label style="font-size: 150%;">856.60 </label></div>
+  			</div>
+  			<div class="left inline">
+  				<div class="newrow1"><label class="block"></label></div>
+  				<div class="newrow2"><div style="width: 100%;height: 22px;"><label class="right">סכום ביניים:</label><label class="left">₪389.60</label></div><div><label class="right">18% מע"מ:</label><label class="left">₪71.23</label></div></div>
+  				<div class="newrow3"><label class="finall_price">460.85</label><span class="curr">₪</span></div>
+  			</div>
+  			
+  		</div>
+  		<div class="peulot">
+  			<button  value="" class="trash"><i class="fa fa-trash-o"></i></button>
+  			<input type="button"  value="הנחה"/>
+  			<input type="button"  value="השהייה"/>
+  			<input type="button"  value="פתק החלפה"/>
+  			<input type="button"  value="זיכוי"/>
+  			<input type="button"  value="לתשלום" class="pay"/>
+  			
+  		</div>
+		</div>
+  	</div>
+  </div>
+  <div class="clear"></div>
+
+  </body>
+</html>

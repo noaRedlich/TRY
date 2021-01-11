@@ -1,0 +1,52 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 19/03/2014 12:16:21
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 19/03/2014 12:19:03
+File "tran8500018.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #85 already exists in database.(2132) Checking transactions...
+Found transaction #8500018.
+Transaction #8500018 added. Processing components...
+Product 2570000000172 already exists in stock.
+Stock has been updated for product 2570000000172.
+Product 2747000000002 already exists in stock.
+Stock has been updated for product 2747000000002.
+Product 9290000000048 already exists in stock.
+Stock has been updated for product 9290000000048.
+Product 790000000858 already exists in stock.
+Stock has been updated for product 790000000858.
+Product 9250000000244 already exists in stock.
+Stock has been updated for product 9250000000244.
+Product 2614000000006 already exists in stock.
+Stock has been updated for product 2614000000006.
+Product 3700000006 already exists in stock.
+Stock has been updated for product 3700000006.
+Product 3700000003 already exists in stock.
+Stock has been updated for product 3700000003.
+Processing payments...
+Cheque payment found for 658.00 NIS.
+Cheque payment found for 659.00 NIS.
+Found payments for total 1317 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran8500018.xml'.....
+done.
+

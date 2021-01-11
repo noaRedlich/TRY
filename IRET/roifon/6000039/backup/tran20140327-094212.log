@@ -1,0 +1,79 @@
+
+Base terminal: 6000039
+Scanning for terminal #6000039
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: N
+- Force all codes: Yes
+- Last plu check: 27/03/2014 09:38:58
+Checking for terminal updates...
+File "pludta" was updated successfully
+Copying to 'pluupdate'......................................done.
+File "deps" was updated successfully
+No update needed for file "club.dat"
+No update needed for file "workers.dat"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 27/03/2014 09:42:12
+File "transz2.xml". Start processing...
+
+Terminal 6000039 found in user database and is active.
+Creating package #2.........................................done.(1)
+Processing transactions:
+Found transaction #200001.
+Transaction #200001 added. Processing components...
+Product 0000000000000 has been added to stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 89.00 NIS.
+Found payments for total 89 NIS.
+Found transaction #200002.
+Transaction #200002 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for -89.00 NIS.
+Found refund for total 89 NIS.
+Found transaction #200003.
+Transaction #200003 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 89.00 NIS.
+Found payments for total 89 NIS.
+Found transaction #200004.
+Transaction #200004 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for -89.00 NIS.
+Found refund for total 89 NIS.
+Found transaction #200005.
+Transaction #200005 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 1.00 NIS.
+Found payments for total 1 NIS.
+File processing complete.
+Moving transaction file to archive as 'transz2.xml'.........
+done.
+
+
+-------------------------------------------------------
+Time: 27/03/2014 09:42:12
+File "clock.txt". Start processing...
+
+No records found.
+
+
+
+Moving clock file to archive as 'clock.2014-03-27.txt'......
+done.
+

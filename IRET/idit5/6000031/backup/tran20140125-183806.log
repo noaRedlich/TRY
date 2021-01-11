@@ -1,0 +1,57 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 25/01/2014 18:32:55
+Checking for terminal updates...
+No update needed for file "pluadd"
+No update needed for file "pluupdate"
+No update needed for file "pludel"
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.-------------------------------------------------------
+Time: 25/01/2014 18:38:06
+File "tran700002.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #7 already exists in database.(1904) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #700002.
+Transaction #700002 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cheque payment found for 150.00 NIS.
+Found payments for total 150 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran700002.xml'......
+done.
+
+-------------------------------------------------------
+Time: 25/01/2014 18:38:06
+File "tran700003.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #7 already exists in database.(1904) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #700003.
+Transaction #700003 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cheque payment found for -150.00 NIS.
+Found refund for total 150 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran700003.xml'......
+done.
+

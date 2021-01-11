@@ -1,0 +1,58 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: No
+- Last plu check: 21/02/2014 09:23:25
+Checking for terminal updates...
+No update needed for file "pluadd"
+File "pluupdate" was updated successfully
+No update needed for file "pludel"
+No update needed for file "deps.add"
+No update needed for file "deps.update"
+No update needed for file "club.add"
+No update needed for file "club.update"
+No update needed for file "workers.add"
+No update needed for file "workers.update"
+Setting lastpludta time flag for the terminal...............done.
+-------------------------------------------------------
+Time: 21/02/2014 09:30:28
+File "tran4200013.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #42 already exists in database.(2033) Checking transactions...
+Found transaction #4200013.
+Transaction #4200013 added. Processing components...
+Product 8120000000257 already exists in stock.
+Stock has been updated for product 8120000000257.
+Product 2570000000097 already exists in stock.
+Stock has been updated for product 2570000000097.
+Product 3800000823 already exists in stock.
+Stock has been updated for product 3800000823.
+Product 7180000000126 already exists in stock.
+Stock has been updated for product 7180000000126.
+Product 2830000000039 already exists in stock.
+Stock has been updated for product 2830000000039.
+Product 3800000397 already exists in stock.
+Stock has been updated for product 3800000397.
+Product 5400000445 already exists in stock.
+Stock has been updated for product 5400000445.
+Product 5400000446 already exists in stock.
+Stock has been updated for product 5400000446.
+Product 2832000000003 already exists in stock.
+Stock has been updated for product 2832000000003.
+Processing payments...
+Credit card payment found for 1193.95 NIS.
+Found payments for total 1193.95 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran4200013.xml'.....
+done.
+

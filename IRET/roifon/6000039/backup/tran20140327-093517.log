@@ -1,0 +1,21 @@
+
+Base terminal: 6000039
+Scanning for terminal #6000039
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: N
+- Force all codes: Yes
+- Last plu check: 26/03/2014 15:29:44
+Checking for terminal updates...
+File "pludta" was updated successfully
+Copying to 'pluupdate'......................................done.
+File "deps" was updated successfully
+No update needed for file "club.dat"
+No update needed for file "workers.dat"
+Setting lastpludta time flag for the terminal...............done.

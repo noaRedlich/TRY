@@ -1,0 +1,94 @@
+
+Base terminal: 6000031
+Scanning for terminal #6000031
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+- Work mode: A
+- Update mode: UD
+- Force all codes: Yes
+- Last plu check: 29/01/2014 11:16:19
+Checking for terminal updates...
+File "pluadd" was updated successfully
+File "deps" was updated successfully
+File "club.dat" was updated successfully
+File "workers.dat" was updated successfully
+Setting lastpludta time flag for the terminal...............done.-------------------------------------------------------
+Time: 29/01/2014 14:32:51
+File "tran100001.xml". Start processing...
+
+Terminal 6000031 found in user database and is active.
+Package #1 already exists in database.(1917) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #100001.
+--WARNING--: Transaction #100001 already exists in database with different date.
+Processing of duplicate packages is FORBIDDEN.
+Transaction skipped.
+File processing complete.
+Moving transaction file to archive as 'tran100001_7.xml'....
+done.
+
+-------------------------------------------------------
+Time: 29/01/2014 14:32:51
+File "tran900018.xml". Start processing...
+
+Terminal ID in file - 6000011, doesn't match current terminal ID - 6000031. Switching to new terminal...
+Scanning for terminal #6000011
+Terminal found.
+Found user directory.
+Found terminal directory.
+Found terminal backup directory.
+Connecting to user database.................................done.
+Checking database compatibility.............................done.
+Database is compatible with XML transactions.
+Terminal 6000011 found in user database and is active.
+Package #9 already exists in database.(9) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #900018.
+Transaction #900018 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 5.00 NIS.
+Found payments for total 5 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran900018.xml'......
+FAIL! (/home/mlaitech/mlaitech.info/IRET/iret/6000011/tran900018.xml -> /home/mlaitech/mlaitech.info/IRET/iret/6000011/backup/tran900018.xml)
+
+-------------------------------------------------------
+Time: 29/01/2014 14:32:51
+File "tran900011.xml". Start processing...
+
+Terminal 6000011 found in user database and is active.
+Package #9 already exists in database.(9) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #900011.
+--WARNING--: Transaction #900011 already exists in database with different date.
+Processing of duplicate packages is FORBIDDEN.
+Transaction skipped.
+File processing complete.
+Moving transaction file to archive as 'tran900011.xml'......
+FAIL! (/home/mlaitech/mlaitech.info/IRET/iret/6000011/tran900011.xml -> /home/mlaitech/mlaitech.info/IRET/iret/6000011/backup/tran900011.xml)
+
+-------------------------------------------------------
+Time: 29/01/2014 14:32:51
+File "tran900017.xml". Start processing...
+
+Terminal 6000011 found in user database and is active.
+Package #9 already exists in database.(9) Checking transactions...
+Processing of duplicate packages is FORBIDDEN. Only new transactions will be added.
+Found transaction #900017.
+Transaction #900017 added. Processing components...
+Product 0000000000000 already exists in stock.
+Stock has been updated for product 0000000000000.
+Processing payments...
+Cash payment found for 5.00 NIS.
+Found payments for total 5 NIS.
+File processing complete.
+Moving transaction file to archive as 'tran900017.xml'......
+FAIL! (/home/mlaitech/mlaitech.info/IRET/iret/6000011/tran900017.xml -> /home/mlaitech/mlaitech.info/IRET/iret/6000011/backup/tran900017.xml)
+
